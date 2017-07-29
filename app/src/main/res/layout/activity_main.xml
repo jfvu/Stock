@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.administrator.stock.ui.activity.MainActivity">
 <LinearLayout
     android:id="@+id/ll_status_activity_main"
@@ -16,13 +17,23 @@
         android:layout_width="match_parent"
         android:layout_height="49px"
         android:background="#ffffff"
+        app:tabSelectedTextColor="#ff0000"
+        app:tabTextColor="#66121212"
+        app:tabMode="fixed"
+        app:tabIndicatorHeight="0px"
         android:layout_alignParentBottom="true">
     </android.support.design.widget.TabLayout>
+    <ImageView
+        android:id="@+id/img_line_activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f8f8f8"
+        android:layout_above="@id/tl_activity_main"/>
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/ll_status_activity_main"
-        android:layout_above="@id/tl_activity_main">
+        android:layout_above="@id/img_line_activity_main">
     </android.support.v4.view.ViewPager>
 </RelativeLayout>

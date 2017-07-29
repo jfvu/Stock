@@ -18,7 +18,9 @@ android {
         }
     }
 }
-
+repositories {
+    flatDir { dirs 'libs' }
+}
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -36,4 +38,5 @@ dependencies {
     compile 'q.rorbin:VerticalTabLayout:1.2.4'
     compile 'com.github.castorflex.verticalviewpager:library:19.0.1'
     testCompile 'junit:junit:4.12'
+    compile(name: 'sliding_menu_lib', ext: 'aar')
 }
