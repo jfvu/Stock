@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.stock.ui.activity.DeclarationActivity">
+<LinearLayout
+    android:id="@+id/ll_status_activity_declaration"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44px"
+        android:layout_below="@id/ll_status_activity_declaration"
+        android:background="#ff0000">
+        <ImageView
+            android:id="@+id/img_return_activity_declaration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/all_return"
+            android:padding="12px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="免责申明"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17px"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

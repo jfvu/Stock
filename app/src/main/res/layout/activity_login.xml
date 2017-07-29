@@ -12,8 +12,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"></LinearLayout>
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="96px"
+        android:layout_height="96px"
         android:src="@drawable/login_logo"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/ll_status_activity_login"
@@ -36,8 +36,8 @@
             android:focusable="true"
             android:focusableInTouchMode="true">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="24px"
+                android:layout_height="24px"
                 android:src="@drawable/login_zhanghu"
                 />
             <EditText
@@ -76,8 +76,8 @@
             android:focusable="true"
             android:focusableInTouchMode="true">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="24px"
+                android:layout_height="24px"
                 android:src="@drawable/login_mima"
                 />
             <EditText
@@ -154,7 +154,7 @@
             android:layout_centerInParent="true"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="2px"
+            android:layout_height="1px"
             android:layout_toLeftOf="@id/tv_other_activity_login"
             android:layout_marginLeft="11px"
             android:layout_marginRight="2px"
@@ -162,7 +162,7 @@
             android:background="#40121212"/>
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="2px"
+            android:layout_height="1px"
             android:layout_toRightOf="@id/tv_other_activity_login"
             android:layout_centerVertical="true"
             android:layout_marginLeft="2px"
@@ -179,6 +179,7 @@
         android:layout_marginLeft="32px"
         >
         <LinearLayout
+            android:id="@+id/ll_qq_activity_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -197,6 +198,7 @@
                 android:layout_marginTop="5px"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_wx_activity_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -215,6 +217,7 @@
                 android:layout_marginTop="5px"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_wb_activity_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"

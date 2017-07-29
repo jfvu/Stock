@@ -15,6 +15,7 @@
         <meta-data
             android:name="design_height"
             android:value="667"/>
+
         <activity android:name=".ui.activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -23,6 +24,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activity.MainActivity">
+        </activity>
+        <activity android:name=".ui.activity.RegisterActivity">
+        </activity>
+        <activity android:name=".ui.activity.ForgetPassWordActivity">
+        </activity>
+        <activity android:name=".ui.activity.DeclarationActivity">
         </activity>
     </application>
 
