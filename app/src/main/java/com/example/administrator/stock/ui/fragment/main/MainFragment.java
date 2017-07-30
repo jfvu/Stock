@@ -1,6 +1,5 @@
 package com.example.administrator.stock.ui.fragment.main;
 
-import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -25,7 +24,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
 
@@ -33,7 +31,7 @@ import butterknife.Unbinder;
  * Created by Administrator on 2017/7/29.
  */
 
-public class MainFragment extends BaseFragment {
+public class MainFragment extends BaseFragment implements View.OnClickListener{
     @BindView(R.id.img_head_fragment_main)
     ImageView mImgHeadFragmentMain;
     @BindView(R.id.vp_fragment_main)
@@ -57,12 +55,14 @@ public class MainFragment extends BaseFragment {
     Unbinder unbinder;
     @BindView(R.id.lin_points)
     LinearLayout mLinPoints;
-    Unbinder unbinder1;
+
     private int[] images = new int[]{R.drawable.main_banner, R.drawable.main_banner, R.drawable.main_banner};  //模拟存放要展示的图片
     private List<ImageView> imageViews;
     private Handler handler;
     private List<TextView> txtPoints;
     private SlidingMenu menu;
+    private ImageView mHead;
+    private LinearLayout mMoney, mMember, mSpecialist, mShare, mOpen, mSet;
 
     @Override
     protected int getLayoutId() {
@@ -71,6 +71,13 @@ public class MainFragment extends BaseFragment {
 
     @Override
     protected void initData() {
+        mHead.setOnClickListener(this);
+        mMoney.setOnClickListener(this);
+        mMember.setOnClickListener(this);
+        mSpecialist.setOnClickListener(this);
+        mShare.setOnClickListener(this);
+        mOpen.setOnClickListener(this);
+        mSet.setOnClickListener(this);
 
     }
 
@@ -81,19 +88,28 @@ public class MainFragment extends BaseFragment {
         initCircle();
         handler = new Handler();
         handler.postDelayed(new TimerRunnable(), 3000);
-        mRvGoldFragmentMain.setLayoutManager( new GridLayoutManager(getActivity(),3));
+        mRvGoldFragmentMain.setLayoutManager(new GridLayoutManager(getActivity(), 3));
         mRvGoldFragmentMain.setAdapter(new MyAdapter());
         mRvInvestFragmentMain.setLayoutManager(new LinearLayoutManager(getActivity()));
         mRvInvestFragmentMain.setAdapter(new MyAdapter2());
 
         menu = new SlidingMenu(getActivity());
         menu.setMode(SlidingMenu.LEFT);
-        menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+        menu.setTouchModeAbove(SlidingMenu.LEFT);
         menu.setBehindOffset(263);
         menu.setFadeEnabled(true);
         menu.setFadeDegree(0.4f);
-        menu.attachToActivity(getActivity(),SlidingMenu.SLIDING_CONTENT);
+        menu.attachToActivity(getActivity(), 1, true);
         menu.setMenu(R.layout.slidingmenu);
+
+        mHead = (ImageView) menu.findViewById(R.id.img_head_sm);
+        mMoney = (LinearLayout) menu.findViewById(R.id.ll_money_sm);
+        mMember = (LinearLayout) menu.findViewById(R.id.ll_member_sm);
+        mSpecialist = (LinearLayout) menu.findViewById(R.id.ll_diagnose_sm);
+        mShare = (LinearLayout) menu.findViewById(R.id.ll_share_sm);
+        mOpen = (LinearLayout) menu.findViewById(R.id.ll_open_sm);
+        mSet = (LinearLayout) menu.findViewById(R.id.ll_set_sm);
+
 
     }
 
@@ -116,6 +132,7 @@ public class MainFragment extends BaseFragment {
                 break;
             case R.id.rl_match:
                 break;
+
         }
     }
 
@@ -146,24 +163,26 @@ public class MainFragment extends BaseFragment {
             public boolean isViewFromObject(View view, Object object) {
                 return view == object;
             }
+
             @Override
             public void destroyItem(ViewGroup container, int position, Object object) {
                 //                container.removeView(imageViews.get(position%imageViews.size())); 删除此句
             }
+
             @Override
             public Object instantiateItem(ViewGroup container, int position) {
                 //                container.addView(imageViews.get(position));
                 //                return imageViews.get(position);  修改如下
                 try {
-                    container.addView(imageViews.get(position%imageViews.size()));
-                }catch (Exception e){
+                    container.addView(imageViews.get(position % imageViews.size()));
+                } catch (Exception e) {
 
                 }
-                return imageViews.get(position%imageViews.size());
+                return imageViews.get(position % imageViews.size());
             }
         });
 
-        mVpFragmentMain.setCurrentItem(imageViews.size()*1000);
+        mVpFragmentMain.setCurrentItem(imageViews.size() * 1000);
 
         mVpFragmentMain.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -173,7 +192,7 @@ public class MainFragment extends BaseFragment {
 
             @Override
             public void onPageSelected(int position) {
-                changePoints((position)%imageViews.size());
+                changePoints((position) % imageViews.size());
             }
 
             @Override
@@ -184,32 +203,40 @@ public class MainFragment extends BaseFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // TODO: inflate a fragment view
-        View rootView = super.onCreateView(inflater, container, savedInstanceState);
-        unbinder1 = ButterKnife.bind(this, rootView);
-        return rootView;
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.img_head_sm:
+                Toast.makeText(getActivity(), "head", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.ll_money_sm:
+                break;
+            case R.id.ll_member_sm:
+                break;
+            case R.id.ll_diagnose_sm:
+                break;
+            case R.id.ll_share_sm:
+                break;
+            case R.id.ll_open_sm:
+                break;
+            case R.id.ll_set_sm:
+                break;
+        }
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        unbinder1.unbind();
-    }
 
     class TimerRunnable implements Runnable {
 
         @Override
         public void run() {
             int curItem;
-            if (mVpFragmentMain!=null){
-            curItem = mVpFragmentMain.getCurrentItem();}
-            else {
+            if (mVpFragmentMain != null) {
+                curItem = mVpFragmentMain.getCurrentItem();
+            } else {
                 curItem = 0;
             }
-            if (mVpFragmentMain!= null){
-            mVpFragmentMain.setCurrentItem(curItem + 1);}
-            else {
+            if (mVpFragmentMain != null) {
+                mVpFragmentMain.setCurrentItem(curItem + 1);
+            } else {
                 //mVpFragmentMain.setCurrentItem(0);
             }
             if (handler != null) {
@@ -246,6 +273,7 @@ public class MainFragment extends BaseFragment {
             mLinPoints.addView(txt);
         }
     }
+
     public void changePoints(int pos) {
         if (txtPoints != null) {
             for (int i = 0; i < txtPoints.size(); i++) {
@@ -257,17 +285,18 @@ public class MainFragment extends BaseFragment {
             }
         }
     }
-    class MyAdapter2 extends RecyclerView.Adapter<MainFragment.MyAdapter2.ViewHolder> {
+
+    class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.ViewHolder> {
 
         @Override
-        public MainFragment.MyAdapter2.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(getActivity()).inflate(R.layout.item_rv_invest_main, parent, false);
             AutoUtils.autoSize(view);
-            return new MainFragment.MyAdapter2.ViewHolder(view);
+            return new ViewHolder(view);
         }
 
         @Override
-        public void onBindViewHolder(MainFragment.MyAdapter2.ViewHolder holder, final int position) {
+        public void onBindViewHolder(ViewHolder holder, final int position) {
 
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -293,17 +322,18 @@ public class MainFragment extends BaseFragment {
             }
         }
     }
-    class MyAdapter extends RecyclerView.Adapter<MainFragment.MyAdapter.ViewHolder> {
+
+    class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         @Override
-        public MainFragment.MyAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(getActivity()).inflate(R.layout.item_rv_gold_main, parent, false);
             AutoUtils.autoSize(view);
-            return new MainFragment.MyAdapter.ViewHolder(view);
+            return new ViewHolder(view);
         }
 
         @Override
-        public void onBindViewHolder(MainFragment.MyAdapter.ViewHolder holder, final int position) {
+        public void onBindViewHolder(ViewHolder holder, final int position) {
 
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
