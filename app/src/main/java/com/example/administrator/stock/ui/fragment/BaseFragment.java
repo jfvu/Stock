@@ -16,12 +16,18 @@ import butterknife.Unbinder;
 
 public abstract class BaseFragment extends Fragment {
     private Unbinder unbinder;
+    //控件是否已经初始化
+    private boolean isCreateView = false;
+    //是否已经加载过数据
+    private boolean isLoadData = false;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(getLayoutId(), null);
         unbinder = ButterKnife.bind(this, view);
+        isCreateView = true;
+        initView();
         return view;
     }
 
@@ -30,8 +36,10 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        initView();
-        initData();
+        if (getUserVisibleHint()){
+            lazyLoad();
+        }
+
     }
 
     protected abstract void initData();
@@ -43,4 +51,21 @@ public abstract class BaseFragment extends Fragment {
         super.onDestroyView();
         unbinder.unbind();
     }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser && isCreateView){
+            lazyLoad();
+        }
+    }
+    private void lazyLoad() {
+        //如果没有加载过就加载，否则就不再加载了
+        if(!isLoadData){
+            //加载数据操作
+            initData();
+            isLoadData=true;
+        }
+    }
+
 }

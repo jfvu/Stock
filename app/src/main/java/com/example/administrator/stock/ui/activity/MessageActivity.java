@@ -30,6 +30,7 @@ public class MessageActivity extends BaseActivity {
     @BindView(R.id.rv_activity_message)
     RecyclerView mRvActivityMessage;
     private Intent mIntent;
+    private String flag;
 
     @Override
     protected void initData() {
@@ -41,7 +42,7 @@ public class MessageActivity extends BaseActivity {
         mRvActivityMessage.setLayoutManager(new LinearLayoutManager(this));
         mRvActivityMessage.setAdapter(new MyAdapter());
         mIntent = getIntent();
-        String flag = mIntent.getStringExtra("MessageActivity");
+        flag = mIntent.getStringExtra("MessageActivity");
     }
 
     @Override
@@ -75,10 +76,11 @@ public class MessageActivity extends BaseActivity {
 
         @Override
         public void onBindViewHolder(ViewHolder holder, final int position) {
+            if (flag!=null&&flag.equals("system")){
             holder.mTextView.setText("系统客服");
             holder.mButton1.setVisibility(View.GONE);
             holder.mButton2.setVisibility(View.GONE);
-            holder.mButton3.setVisibility(View.GONE);
+            holder.mButton3.setVisibility(View.GONE);}
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
