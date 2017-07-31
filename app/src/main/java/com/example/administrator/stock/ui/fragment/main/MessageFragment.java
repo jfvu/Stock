@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import com.example.administrator.stock.R;
 import com.example.administrator.stock.ui.activity.MessageActivity;
+import com.example.administrator.stock.ui.activity.MessageSetActivity;
 import com.example.administrator.stock.ui.fragment.BaseFragment;
 
 import butterknife.BindView;
@@ -60,6 +61,8 @@ public class MessageFragment extends BaseFragment {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_set_fragment_message:
+                mIntent = new Intent(getActivity(), MessageSetActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.rl_1_fragment_message:
                 mIntent = new Intent(getActivity(), MessageActivity.class);

@@ -33,6 +33,8 @@
         </activity>
         <activity android:name=".ui.activity.MessageActivity">
         </activity>
+        <activity android:name=".ui.activity.MessageSetActivity">
+        </activity>
     </application>
 
 </manifest>

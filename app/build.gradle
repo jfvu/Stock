@@ -26,9 +26,9 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    compile(name: 'sliding_menu_lib', ext: 'aar')
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile(name: 'sliding_menu_lib', ext: 'aar')
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.jakewharton:butterknife:8.0.0'
@@ -38,6 +38,6 @@ dependencies {
     compile 'com.gyf.barlibrary:barlibrary:2.2.5'
     compile 'q.rorbin:VerticalTabLayout:1.2.4'
     compile 'com.github.castorflex.verticalviewpager:library:19.0.1'
-    testCompile 'junit:junit:4.12'
     compile 'com.zcw:togglebutton-library:1.0.0'
+    testCompile 'junit:junit:4.12'
 }
