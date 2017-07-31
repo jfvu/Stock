@@ -1,11 +1,13 @@
 package com.example.administrator.stock.ui.fragment.main;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.widget.TextView;
 
 import com.example.administrator.stock.R;
 import com.example.administrator.stock.adapter.FormulaFragmentAdapter;
+import com.example.administrator.stock.ui.activity.CreateFormulaActivity;
 import com.example.administrator.stock.ui.fragment.BaseFragment;
 
 import butterknife.BindView;
@@ -60,5 +62,6 @@ public class FormulaFragment extends BaseFragment {
 
     @OnClick(R.id.tv_creat_fragment_formula)
     public void onViewClicked() {
+        startActivity(new Intent(getActivity(), CreateFormulaActivity.class));
     }
 }

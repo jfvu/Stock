@@ -80,12 +80,12 @@
             <ImageView
                 android:layout_width="12px"
                 android:layout_height="12px"
-                android:src="@drawable/edit_1"/>
+                android:src="@drawable/edit_4"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="主图公式"
-                android:textColor="#FFFF0000"
+                android:text="预警公式"
+                android:textColor="#FFF8E81C"
                 android:textSize="14px"/>
         </LinearLayout>
         <LinearLayout
@@ -98,12 +98,12 @@
             <ImageView
                 android:layout_width="12px"
                 android:layout_height="12px"
-                android:src="@drawable/edit_2"/>
+                android:src="@drawable/edit_5"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="副图公式"
-                android:textColor="#FFF6A623"
+                android:text="构件公式"
+                android:textColor="#FFB8E986"
                 android:textSize="14px"/>
         </LinearLayout>
         <LinearLayout
@@ -116,13 +116,18 @@
             <ImageView
                 android:layout_width="12px"
                 android:layout_height="12px"
-                android:src="@drawable/edit_3"/>
+                android:src="@drawable/edit_6"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="分时公式"
-                android:textColor="#E65C93DF"
+                android:text="组合公式"
+                android:textColor="#AF0505"
                 android:textSize="14px"/>
         </LinearLayout>
     </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_fragment_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8px"></android.support.v7.widget.RecyclerView>
 </LinearLayout>

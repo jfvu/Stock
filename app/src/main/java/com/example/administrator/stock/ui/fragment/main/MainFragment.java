@@ -22,6 +22,7 @@ import com.example.administrator.stock.ui.activity.MemberActivity;
 import com.example.administrator.stock.ui.activity.OpenActivity;
 import com.example.administrator.stock.ui.activity.SetActivity;
 import com.example.administrator.stock.ui.activity.ShareActivity;
+import com.example.administrator.stock.ui.activity.SimulationActivity;
 import com.example.administrator.stock.ui.activity.StrategyActivity;
 import com.example.administrator.stock.ui.activity.SupermarketActivity;
 import com.example.administrator.stock.ui.activity.WalletActivity;
@@ -141,6 +142,8 @@ public class MainFragment extends BaseFragment implements View.OnClickListener{
                 startActivity(mIntent);
                 break;
             case R.id.rl_simulate:
+                mIntent = new Intent(getActivity(), SimulationActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.rl_new:
                 break;
