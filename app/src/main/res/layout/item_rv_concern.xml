@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="56px"
+                android:id="@+id/rl_item_rv_concern"
+    android:background="#ffffff"
+    android:layout_marginTop="1px">
+<ImageView
+    android:layout_width="36px"
+    android:layout_height="36px"
+    android:src="@drawable/concern_head"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="12px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名字"
+        android:textColor="#E6121212"
+        android:textSize="14px"
+        android:layout_marginLeft="53px"
+        android:layout_marginTop="7px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="描述文字"
+        android:textColor="#40121212"
+        android:textSize="12px"
+        android:layout_marginTop="31px"
+        android:layout_marginLeft="53px"/>
+</RelativeLayout>

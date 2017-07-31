@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="161px">
+<ImageView
+    android:layout_width="46px"
+    android:layout_height="46px"
+    android:src="@drawable/invite_item_head"
+    android:layout_marginTop="8px"
+    android:layout_marginLeft="16px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户"
+        android:textColor="#E6121212"
+        android:textSize="14px"
+        android:layout_marginTop="8px"
+        android:layout_marginLeft="70px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户的简介"
+        android:textColor="#40323232"
+        android:textSize="12px"
+        android:layout_marginTop="35px"
+        android:layout_marginLeft="70px"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容。"
+        android:textColor="#E6121212"
+        android:textSize="12px"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginRight="16px"
+        android:layout_marginLeft="16px"
+        android:layout_alignParentBottom="true"
+        android:background="#f8f8f8"/>
+</RelativeLayout>

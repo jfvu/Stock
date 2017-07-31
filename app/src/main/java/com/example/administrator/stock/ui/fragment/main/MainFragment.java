@@ -1,5 +1,6 @@
 package com.example.administrator.stock.ui.fragment.main;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -16,6 +17,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.stock.R;
+import com.example.administrator.stock.ui.activity.ExpertActivity;
+import com.example.administrator.stock.ui.activity.MemberActivity;
+import com.example.administrator.stock.ui.activity.SetActivity;
+import com.example.administrator.stock.ui.activity.ShareActivity;
+import com.example.administrator.stock.ui.activity.WalletActivity;
 import com.example.administrator.stock.ui.fragment.BaseFragment;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.zhy.autolayout.utils.AutoUtils;
@@ -63,6 +69,7 @@ public class MainFragment extends BaseFragment implements View.OnClickListener{
     private SlidingMenu menu;
     private ImageView mHead;
     private LinearLayout mMoney, mMember, mSpecialist, mShare, mOpen, mSet;
+    private Intent mIntent;
 
     @Override
     protected int getLayoutId() {
@@ -209,16 +216,26 @@ public class MainFragment extends BaseFragment implements View.OnClickListener{
                 Toast.makeText(getActivity(), "head", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.ll_money_sm:
+                mIntent = new Intent(getActivity(), WalletActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.ll_member_sm:
+                mIntent = new Intent(getActivity(), MemberActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.ll_diagnose_sm:
+                mIntent = new Intent(getActivity(), ExpertActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.ll_share_sm:
+                mIntent = new Intent(getActivity(), ShareActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.ll_open_sm:
                 break;
             case R.id.ll_set_sm:
+                mIntent = new Intent(getActivity(), SetActivity.class);
+                startActivity(mIntent);
                 break;
         }
     }

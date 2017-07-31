@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="85px">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="12px"
+    android:layout_marginRight="12px"
+    android:layout_marginTop="4px"
+    android:layout_marginBottom="4px"
+    android:background="@drawable/main_card">
+    <ImageView
+        android:layout_width="14px"
+        android:layout_height="14px"
+        android:src="@drawable/member_time"
+        android:layout_marginTop="14px"
+        android:layout_marginLeft="12px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017.06.01 07:12:00"
+        android:textColor="#E6121212"
+        android:textSize="18px"
+        android:layout_marginTop="8px"
+        android:layout_marginLeft="31px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48px"
+        android:layout_marginLeft="12px"
+        android:text="支出:"
+        android:textColor="#40323232"
+        android:textSize="12px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打赏XXX"
+        android:textColor="#FFFF0000"
+        android:textSize="16px"
+        android:layout_marginTop="43px"
+        android:layout_marginLeft="46px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="金币:-5"
+        android:textColor="#FFFF0000"
+        android:textSize="16px"
+        android:layout_marginTop="27px"
+        android:layout_marginRight="16px"/>
+</RelativeLayout>
+</RelativeLayout>
