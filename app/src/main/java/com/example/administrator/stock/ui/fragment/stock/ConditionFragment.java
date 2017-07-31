@@ -34,7 +34,7 @@ public class ConditionFragment extends BaseFragment {
 
     @Override
     protected void initView() {
-        mConditionFragmentAdapter = new ConditionFragmentAdapter(getActivity().getSupportFragmentManager(),getActivity());
+        mConditionFragmentAdapter = new ConditionFragmentAdapter(getChildFragmentManager(),getActivity());
         mVpFragmentCondition.setAdapter(mConditionFragmentAdapter);
         mTlFragmentCondition.setupWithViewPager(mVpFragmentCondition);
 

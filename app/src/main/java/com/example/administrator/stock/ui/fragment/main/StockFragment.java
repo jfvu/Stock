@@ -41,7 +41,7 @@ public class StockFragment extends BaseFragment {
 
     @Override
     protected void initView() {
-        mMainFragmentAdapter = new StockFragmentAdapter(getActivity().getSupportFragmentManager(),getActivity());
+        mMainFragmentAdapter = new StockFragmentAdapter(getChildFragmentManager(),getActivity());
         mVpFragmentStock.setAdapter(mMainFragmentAdapter);
         mTlTitleFragmentStock.setupWithViewPager(mVpFragmentStock);
 

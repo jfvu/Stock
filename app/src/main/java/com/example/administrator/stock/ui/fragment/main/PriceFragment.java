@@ -44,7 +44,7 @@ public class PriceFragment extends BaseFragment {
 
     @Override
     protected void initView() {
-        mPriceFragmentAdapter = new PriceFragmentAdapter(getActivity().getSupportFragmentManager(),getActivity());
+        mPriceFragmentAdapter = new PriceFragmentAdapter(getChildFragmentManager(),getActivity());
         mVpFragmentPrice.setAdapter(mPriceFragmentAdapter);
         mTlFragmentPrice.setupWithViewPager(mVpFragmentPrice);
 

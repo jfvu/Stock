@@ -1,19 +1,13 @@
 package com.example.administrator.stock.ui.fragment.stock;
 
-import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.example.administrator.stock.R;
-import com.example.administrator.stock.adapter.ConditionFragmentAdapter;
 import com.example.administrator.stock.adapter.EquationFragmentAdapter;
 import com.example.administrator.stock.ui.fragment.BaseFragment;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 /**
@@ -40,7 +34,7 @@ public class EquationFragment extends BaseFragment {
 
     @Override
     protected void initView() {
-        mEquationFragmentAdapter = new EquationFragmentAdapter(getActivity().getSupportFragmentManager(),getActivity());
+        mEquationFragmentAdapter = new EquationFragmentAdapter(getChildFragmentManager(),getActivity());
         mVpFragmentEquation.setAdapter(mEquationFragmentAdapter);
         mTlFragmentEquation.setupWithViewPager(mVpFragmentEquation);
 
