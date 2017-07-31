@@ -19,8 +19,11 @@ import android.widget.Toast;
 import com.example.administrator.stock.R;
 import com.example.administrator.stock.ui.activity.ExpertActivity;
 import com.example.administrator.stock.ui.activity.MemberActivity;
+import com.example.administrator.stock.ui.activity.OpenActivity;
 import com.example.administrator.stock.ui.activity.SetActivity;
 import com.example.administrator.stock.ui.activity.ShareActivity;
+import com.example.administrator.stock.ui.activity.StrategyActivity;
+import com.example.administrator.stock.ui.activity.SupermarketActivity;
 import com.example.administrator.stock.ui.activity.WalletActivity;
 import com.example.administrator.stock.ui.fragment.BaseFragment;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
@@ -128,10 +131,14 @@ public class MainFragment extends BaseFragment implements View.OnClickListener{
                 menu.toggle();
                 break;
             case R.id.rl_wind:
+                mIntent = new Intent(getActivity(), StrategyActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.rl_tactics:
                 break;
             case R.id.rl_skill:
+                mIntent = new Intent(getActivity(), SupermarketActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.rl_simulate:
                 break;
@@ -232,6 +239,8 @@ public class MainFragment extends BaseFragment implements View.OnClickListener{
                 startActivity(mIntent);
                 break;
             case R.id.ll_open_sm:
+                mIntent = new Intent(getActivity(), OpenActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.ll_set_sm:
                 mIntent = new Intent(getActivity(), SetActivity.class);

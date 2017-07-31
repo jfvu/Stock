@@ -1,5 +1,6 @@
 package com.example.administrator.stock.ui.fragment.main;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.widget.ImageView;
 
 import com.example.administrator.stock.R;
 import com.example.administrator.stock.adapter.PriceFragmentAdapter;
+import com.example.administrator.stock.ui.activity.SeachActivity;
 import com.example.administrator.stock.ui.fragment.BaseFragment;
 
 import butterknife.BindView;
@@ -28,6 +30,7 @@ public class PriceFragment extends BaseFragment {
     ViewPager mVpFragmentPrice;
     Unbinder unbinder;
     private PriceFragmentAdapter mPriceFragmentAdapter;
+    private Intent mIntent;
 
     @Override
     protected int getLayoutId() {
@@ -61,6 +64,8 @@ public class PriceFragment extends BaseFragment {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.img_seach_fragemnt_price:
+                mIntent = new Intent(getActivity(), SeachActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.img_refresh_fragemnt_price:
                 break;

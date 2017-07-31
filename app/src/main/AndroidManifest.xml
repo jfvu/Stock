@@ -51,6 +51,14 @@
         </activity>
         <activity android:name=".ui.activity.OpenActivity">
         </activity>
+        <activity android:name=".ui.activity.SeachActivity">
+        </activity>
+        <activity android:name=".ui.activity.StrategyActivity">
+        </activity>
+        <activity android:name=".ui.activity.AiActivity">
+        </activity>
+        <activity android:name=".ui.activity.SupermarketActivity">
+        </activity>
     </application>
 
 </manifest>
