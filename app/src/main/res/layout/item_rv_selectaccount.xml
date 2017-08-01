@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="48px"
+    android:layout_marginTop="1px"
+    android:background="#ffffff">
+<TextView
+    android:layout_width="35px"
+    android:layout_height="35px"
+    android:background="@drawable/item_open_logo"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="12px"
+    android:gravity="center"
+    android:text="长城\n证券"
+    android:textColor="#FFFFFFFF"
+    android:textSize="10px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="长城证券(800001)"
+        android:textColor="#E6121212"
+        android:textSize="12px"
+        android:layout_marginTop="6px"
+        android:layout_marginLeft="52px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内容内容内容内容内容内容内容内容…"
+        android:textColor="#E6121212"
+        android:textSize="9px"
+        android:layout_marginTop="28px"
+        android:layout_marginLeft="52px"/>
+    <Button
+        android:id="@+id/btn_open_item_rv_selectaccount"
+        android:layout_width="83px"
+        android:layout_height="33px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12px"
+        android:background="@drawable/shape_buy_message"
+        android:text="立即开户"
+        android:textColor="#FFFF0000"
+        android:textSize="12px"/>
+</RelativeLayout>

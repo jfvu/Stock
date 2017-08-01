@@ -69,6 +69,10 @@
         </activity>
         <activity android:name=".ui.activity.SimulationActivity">
         </activity>
+        <activity android:name=".ui.activity.SelectAccountActivity">
+        </activity>
+        <activity android:name=".ui.activity.AccountActivity">
+        </activity>
     </application>
 
 </manifest>

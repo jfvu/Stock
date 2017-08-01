@@ -1,5 +1,6 @@
 package com.example.administrator.stock.ui.activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -75,6 +76,7 @@ public class SimulationActivity extends BaseActivity {
             case R.id.btn_login_activity_simulation:
                 break;
             case R.id.rl_account_activity_simulation:
+                startActivity(new Intent(this,SelectAccountActivity.class));
                 break;
         }
     }
