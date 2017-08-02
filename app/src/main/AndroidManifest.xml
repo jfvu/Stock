@@ -73,6 +73,34 @@
         </activity>
         <activity android:name=".ui.activity.AccountActivity">
         </activity>
+        <activity android:name=".ui.activity.AddTacticsActivity">
+        </activity>
+        <activity android:name=".ui.activity.ManageSiteActivity">
+        </activity>
+        <activity android:name=".ui.activity.StopActivity">
+        </activity>
+        <activity android:name=".ui.activity.RuleActivity">
+        </activity>
+        <activity android:name=".ui.activity.AppointActivity">
+        </activity>
+        <activity android:name=".ui.activity.TacticsTestActivity">
+        </activity>
+        <activity android:name=".ui.activity.MatchActivity">
+        </activity>
+        <activity android:name=".ui.activity.MatchExplainActivity">
+        </activity>
+        <activity android:name=".ui.activity.CreatMatchActivity">
+        </activity>
+        <activity android:name=".ui.activity.CreatMatch2Activity">
+        </activity>
+        <activity android:name=".ui.activity.MatchExplain2Activity">
+        </activity>
+        <activity android:name=".ui.activity.NewActivity">
+        </activity>
+        <activity android:name=".ui.activity.NewDetailsActivity">
+        </activity>
+        <activity android:name=".ui.activity.FeedbackActivity">
+        </activity>
     </application>
 
 </manifest>

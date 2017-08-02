@@ -73,6 +73,8 @@ public class SetActivity extends BaseActivity {
             case R.id.rl_font_activity_set:
                 break;
             case R.id.rl_feedback_activity_set:
+                mIntent = new Intent(this,FeedbackActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.rl_about_activity_set:
                 mIntent = new Intent(this,AboutActivity.class);

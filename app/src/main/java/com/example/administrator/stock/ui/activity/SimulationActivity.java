@@ -74,6 +74,7 @@ public class SimulationActivity extends BaseActivity {
             case R.id.img_refresh_activity_simulation:
                 break;
             case R.id.btn_login_activity_simulation:
+                startActivity(new Intent(this,AccountActivity.class));
                 break;
             case R.id.rl_account_activity_simulation:
                 startActivity(new Intent(this,SelectAccountActivity.class));

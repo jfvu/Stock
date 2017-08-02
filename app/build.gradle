@@ -39,5 +39,6 @@ dependencies {
     compile 'q.rorbin:VerticalTabLayout:1.2.4'
     compile 'com.github.castorflex.verticalviewpager:library:19.0.1'
     compile 'com.zcw:togglebutton-library:1.0.0'
+    compile 'me.kareluo.ui:popmenu:1.1.0'
     testCompile 'junit:junit:4.12'
 }

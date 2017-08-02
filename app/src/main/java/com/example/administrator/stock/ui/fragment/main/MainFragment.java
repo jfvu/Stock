@@ -17,8 +17,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.stock.R;
+import com.example.administrator.stock.ui.activity.AiActivity;
 import com.example.administrator.stock.ui.activity.ExpertActivity;
+import com.example.administrator.stock.ui.activity.MatchActivity;
 import com.example.administrator.stock.ui.activity.MemberActivity;
+import com.example.administrator.stock.ui.activity.NewActivity;
 import com.example.administrator.stock.ui.activity.OpenActivity;
 import com.example.administrator.stock.ui.activity.SetActivity;
 import com.example.administrator.stock.ui.activity.ShareActivity;
@@ -136,6 +139,8 @@ public class MainFragment extends BaseFragment implements View.OnClickListener{
                 startActivity(mIntent);
                 break;
             case R.id.rl_tactics:
+                mIntent = new Intent(getActivity(), AiActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.rl_skill:
                 mIntent = new Intent(getActivity(), SupermarketActivity.class);
@@ -146,8 +151,12 @@ public class MainFragment extends BaseFragment implements View.OnClickListener{
                 startActivity(mIntent);
                 break;
             case R.id.rl_new:
+                mIntent = new Intent(getActivity(), NewActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.rl_match:
+                mIntent = new Intent(getActivity(), MatchActivity.class);
+                startActivity(mIntent);
                 break;
 
         }

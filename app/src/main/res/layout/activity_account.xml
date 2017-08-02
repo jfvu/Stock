@@ -155,7 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_weight="1">
+                android:layout_weight="0.8">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -181,6 +181,7 @@
         android:background="#ffffff"
         android:orientation="horizontal">
         <LinearLayout
+            android:id="@+id/ll_buy_activity_accound"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -200,6 +201,7 @@
                 android:layout_marginTop="5px"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_sell_activity_accound"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -214,11 +216,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="卖出"
-                android:textColor="#E6121212"
+                android:textColor="#e60de223"
                 android:textSize="10px"
                 android:layout_marginTop="5px"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_back_activity_accound"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -238,6 +241,7 @@
                 android:layout_marginTop="5px"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_hold_activity_accound"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -257,6 +261,7 @@
                 android:layout_marginTop="5px"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_seach_activity_accound"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -276,6 +281,113 @@
                 android:layout_marginTop="5px"/>
         </LinearLayout>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75px"
+        android:background="#ffffff"
+        android:layout_marginTop="8px"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6月参考盈亏"
+            android:textColor="#40121212"
+            android:textSize="12px"
+            android:layout_marginTop="8px"
+            android:layout_marginLeft="12px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+781.92"
+            android:textColor="#FFFF0000"
+            android:textSize="16px"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="3px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收益率9.28%，跑赢上证指数7.97%"
+            android:textColor="#40121212"
+            android:textSize="10px"
+            android:layout_marginTop="3px"
+            android:layout_marginLeft="12px"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="历史明细"
+        android:textColor="#FFFF0000"
+        android:textSize="14px"
+        android:layout_marginLeft="11px"
+        android:layout_marginTop="8px"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="201px"
+        android:background="@drawable/a_stock"
+        android:layout_marginTop="8px"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68px"
+        android:background="#ffffff"
+        android:layout_marginTop="8px"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_ai_activity_accound"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:src="@drawable/a_ai"
+                android:layout_marginLeft="24px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI策略"
+                android:textColor="#FF9012FE"
+                android:textSize="16px"
+                android:layout_marginLeft="8px"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_match_activity_accound"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:src="@drawable/a_match"
+                android:layout_marginLeft="24px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="比赛"
+                android:textColor="#FFFF0000"
+                android:textSize="16px"
+                android:layout_marginLeft="8px"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="136px">
+        <Button
+            android:id="@+id/btn_out_activity_accound"
+            android:layout_width="147px"
+            android:layout_height="44px"
+            android:background="@drawable/shape_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60px"
+            android:text="退出"
+            android:textColor="#FFFF0000"
+            android:textSize="16px"/>
+    </RelativeLayout>
+
+
 </LinearLayout>
     </ScrollView>
 
