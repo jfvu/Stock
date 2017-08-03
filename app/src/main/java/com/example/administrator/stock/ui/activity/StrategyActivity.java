@@ -1,5 +1,6 @@
 package com.example.administrator.stock.ui.activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -79,6 +80,7 @@ public class StrategyActivity extends BaseActivity {
                 finish();
                 break;
             case R.id.tv_checkin_activity_strategy:
+                startActivity(new Intent(this,EnterActivity.class));
                 break;
         }
     }

@@ -101,6 +101,20 @@
         </activity>
         <activity android:name=".ui.activity.FeedbackActivity">
         </activity>
+        <activity android:name=".ui.activity.ListActivity">
+        </activity>
+        <activity android:name=".ui.activity.GroupActivity">
+        </activity>
+        <activity android:name=".ui.activity.ConditionActivity">
+        </activity>
+        <activity android:name=".ui.activity.RoomActivity">
+        </activity>
+        <activity android:name=".ui.activity.ChatActivity">
+        </activity>
+        <activity android:name=".ui.activity.EnterActivity">
+        </activity>
+        <activity android:name=".ui.activity.PlateActivity">
+        </activity>
     </application>
 
 </manifest>

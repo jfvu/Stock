@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.example.administrator.stock.R;
 import com.example.administrator.stock.ui.activity.MessageActivity;
 import com.example.administrator.stock.ui.activity.MessageSetActivity;
+import com.example.administrator.stock.ui.activity.RoomActivity;
 import com.example.administrator.stock.ui.fragment.BaseFragment;
 
 import butterknife.BindView;
@@ -94,6 +95,8 @@ public class MessageFragment extends BaseFragment {
                 startActivity(mIntent);
                 break;
             case R.id.rl_room_fragment_message:
+                mIntent = new Intent(getActivity(), RoomActivity.class);
+                startActivity(mIntent);
                 break;
         }
     }

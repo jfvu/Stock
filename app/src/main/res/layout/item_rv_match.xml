@@ -11,6 +11,7 @@
     android:layout_marginRight="12px"
     android:layout_marginLeft="12px">
     <LinearLayout
+        android:id="@+id/ll_list_item_rv_match"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16px"
@@ -71,6 +72,7 @@
         android:layout_marginBottom="10px"
         android:orientation="horizontal">
         <CheckBox
+            android:id="@+id/cb_share_item_rv_match"
             android:layout_width="45px"
             android:layout_height="22px"
             android:button="@null"

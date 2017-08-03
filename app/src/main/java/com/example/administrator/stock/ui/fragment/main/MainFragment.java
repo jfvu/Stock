@@ -22,6 +22,7 @@ import com.example.administrator.stock.ui.activity.ExpertActivity;
 import com.example.administrator.stock.ui.activity.MatchActivity;
 import com.example.administrator.stock.ui.activity.MemberActivity;
 import com.example.administrator.stock.ui.activity.NewActivity;
+import com.example.administrator.stock.ui.activity.NewDetailsActivity;
 import com.example.administrator.stock.ui.activity.OpenActivity;
 import com.example.administrator.stock.ui.activity.SetActivity;
 import com.example.administrator.stock.ui.activity.ShareActivity;
@@ -339,7 +340,9 @@ public class MainFragment extends BaseFragment implements View.OnClickListener{
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(getActivity(), "" + position, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getActivity(), "" + position, Toast.LENGTH_SHORT).show();
+                    mIntent = new Intent(getActivity(), NewDetailsActivity.class);
+                    startActivity(mIntent);
                 }
             });
 

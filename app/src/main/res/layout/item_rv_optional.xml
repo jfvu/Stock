@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="44px"
+                android:id="@+id/rl_all_item_price"
+    android:layout_marginTop="1px"
+    android:background="#ffffff">
+<CheckBox
+    android:id="@+id/cb_item_rv_optional"
+    android:layout_width="20px"
+    android:layout_height="20px"
+    android:button="@null"
+    android:background="@drawable/select_price_cbbg"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="12px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="航新科技"
+        android:textColor="#E6121212"
+        android:textSize="14px"
+
+        android:layout_marginTop="6px"
+        android:layout_marginLeft="40px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300658"
+        android:textColor="#40323232"
+        android:textSize="10px"
+        android:layout_marginTop="25px"
+        android:layout_marginLeft="40px"/>
+    <TextView
+        android:id="@+id/tv_center_optional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="23.95"
+        android:textColor="#E6121212"
+        android:textSize="16px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12px"
+        android:text="-1.54%"
+        android:textColor="#FF7ED321"
+        android:textSize="16px"/>
+</RelativeLayout>

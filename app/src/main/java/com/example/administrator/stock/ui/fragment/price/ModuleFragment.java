@@ -1,5 +1,6 @@
 package com.example.administrator.stock.ui.fragment.price;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.stock.R;
+import com.example.administrator.stock.ui.activity.PlateActivity;
 import com.example.administrator.stock.ui.fragment.BaseFragment;
 import com.zhy.autolayout.utils.AutoUtils;
 
@@ -266,7 +268,8 @@ public class ModuleFragment extends BaseFragment {
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(getActivity(), "" + position, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getActivity(), "" + position, Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getActivity(), PlateActivity.class));
                 }
             });
 

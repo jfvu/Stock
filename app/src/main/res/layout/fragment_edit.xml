@@ -10,6 +10,7 @@
     android:layout_marginTop="8px"
     android:background="#ffffff">
     <LinearLayout
+        android:id="@+id/ll_1_fragment_edit"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/pop_llbg"
@@ -28,6 +29,7 @@
             android:textSize="14px"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/ll_2_fragment_edit"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/pop_llbg"
@@ -46,6 +48,7 @@
             android:textSize="14px"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/ll_3_fragment_edit"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/pop_llbg"
@@ -71,6 +74,7 @@
 
         android:background="#ffffff">
         <LinearLayout
+            android:id="@+id/ll_4_fragment_edit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/pop_llbg"
@@ -89,6 +93,7 @@
                 android:textSize="14px"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_5_fragment_edit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/pop_llbg"
@@ -107,6 +112,7 @@
                 android:textSize="14px"/>
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ll_6_fragment_edit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/pop_llbg"
