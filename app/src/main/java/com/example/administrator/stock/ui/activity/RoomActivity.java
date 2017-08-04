@@ -2,13 +2,15 @@ package com.example.administrator.stock.ui.activity;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
 
 import com.example.administrator.stock.R;
+import com.example.administrator.stock.adapter.RoomFragmentAdapter;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -26,14 +28,12 @@ public class RoomActivity extends BaseActivity {
     Button mBtnAttention;
     @BindView(R.id.btn_collect)
     Button mBtnCollect;
-    @BindView(R.id.rb_live)
-    RadioButton mRbLive;
-    @BindView(R.id.rb_delicacy)
-    RadioButton mRbDelicacy;
-    @BindView(R.id.rb_diagnose)
-    RadioButton mRbDiagnose;
-    @BindView(R.id.btn_join)
-    Button mBtnJoin;
+    @BindView(R.id.tl_activity_room)
+    TabLayout mTlActivityRoom;
+    @BindView(R.id.vp_activity_room)
+    ViewPager mVpActivityRoom;
+    private RoomFragmentAdapter mRoomFragmentAdapter;
+
 
     @Override
     protected void initData() {
@@ -42,7 +42,22 @@ public class RoomActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-        mRbLive.setChecked(true);
+        mRoomFragmentAdapter = new RoomFragmentAdapter(getSupportFragmentManager(),getApplication());
+        mVpActivityRoom.setAdapter(mRoomFragmentAdapter);
+        mTlActivityRoom.setupWithViewPager(mVpActivityRoom);
+
+        mTlActivityRoom.getTabAt(0).setText("直播");
+        mTlActivityRoom.getTabAt(1).setText("精品内参");
+        mTlActivityRoom.getTabAt(2).setText("诊股");
+
+        /*LinearLayout linearLayout = (LinearLayout) mTlTitleFragmentStock.getChildAt(0);
+        linearLayout.setShowDividers(LinearLayout.SHOW_DIVIDER_MIDDLE);
+        linearLayout.setDividerDrawable(ContextCompat.getDrawable(getActivity(),
+                R.drawable.layout_divider_vertical));*/
+        //tlActivityMain.setTabTextColors(Color.parseColor("#40242424"),Color.parseColor("#121212"));
+        mTlActivityRoom.setTabGravity(TabLayout.GRAVITY_FILL);
+        mVpActivityRoom.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mTlActivityRoom));
+        mTlActivityRoom.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mVpActivityRoom));
     }
 
     @Override
@@ -61,23 +76,23 @@ public class RoomActivity extends BaseActivity {
     }
 
 
-
-    @OnClick({R.id.img_return_activity_room, R.id.img_seach_activity_room, R.id.btn_attention, R.id.btn_collect, R.id.btn_join})
+    @OnClick({R.id.img_return_activity_room, R.id.img_seach_activity_room, R.id.btn_attention, R.id.btn_collect})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.img_return_activity_room:
                 finish();
                 break;
             case R.id.img_seach_activity_room:
-                startActivity(new Intent(this,SeachActivity.class));
+                startActivity(new Intent(this, SeachActivity.class));
                 break;
             case R.id.btn_attention:
                 break;
             case R.id.btn_collect:
                 break;
-            case R.id.btn_join:
+            /*case R.id.btn_join:
                 startActivity(new Intent(this,ChatActivity.class));
-                break;
+                break;*/
         }
     }
+
 }

@@ -91,11 +91,8 @@ public class CreatMatchActivity extends BaseActivity {
         mMatchPop.setBackgroundDrawable(new BitmapDrawable());
         mMatchPop.setOutsideTouchable(true);
 
-
-
         mMatchPop.showAtLocation(this.findViewById(R.id.ll_all_activity_creatmatch), Gravity.CENTER,0,0);
         mMatchPop.setOnDismissListener(new PopupWindow.OnDismissListener() {
-
             // 在dismiss中恢复透明度
             public void onDismiss() {
 
@@ -114,8 +111,6 @@ public class CreatMatchActivity extends BaseActivity {
                 case R.id.btn_yes_pop_match:
                     mMatchPop.dismiss();
                     break;
-
-
             }
         }
     };
