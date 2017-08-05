@@ -115,6 +115,24 @@
         </activity>
         <activity android:name=".ui.activity.PlateActivity">
         </activity>
+        <activity android:name=".ui.activity.QuestionActivity">
+        </activity>
+        <activity android:name=".ui.activity.ShowSetActivity">
+        </activity>
+        <activity android:name=".ui.activity.DiagnoseActivity">
+        </activity>
+        <activity android:name=".ui.activity.StockActivity">
+        </activity>
+        <activity android:name=".ui.activity.WarnActivity">
+        </activity>
+        <activity android:name=".ui.activity.FormulaActivity">
+        </activity>
+        <activity android:name=".ui.activity.TendencyActivity">
+        </activity>
+        <activity android:name=".ui.activity.Condition1Activity">
+        </activity>
+        <activity android:name=".ui.activity.PlayerActivity">
+        </activity>
     </application>
 
 </manifest>

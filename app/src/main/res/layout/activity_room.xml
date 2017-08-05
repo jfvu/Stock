@@ -39,6 +39,16 @@
             android:padding="12px"
             android:layout_alignParentBottom="true"/>
     </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="218px"
@@ -186,15 +196,7 @@
                 />
         </LinearLayout>
     </LinearLayout>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:overScrollMode="never">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
@@ -336,11 +338,11 @@
             app:tabMode="fixed"
             app:tabSelectedTextColor="#ff0000"
             app:tabTextColor="#40121212"></android.support.design.widget.TabLayout>
-
         <android.support.v4.view.ViewPager
             android:id="@+id/vp_activity_room"
             android:layout_width="match_parent"
-            android:layout_height="0dp"></android.support.v4.view.ViewPager>
+            android:layout_height="300px"
+            android:layout_weight="1"></android.support.v4.view.ViewPager>
     </LinearLayout>
 </ScrollView>
 </LinearLayout>

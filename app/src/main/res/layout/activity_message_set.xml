@@ -54,6 +54,7 @@
             android:layout_width="40px"
             android:layout_height="20px"
             app:tbOnColor="#ff0000"
+            app:tbOffBorderColor="#f8f8f8"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="12px"/>

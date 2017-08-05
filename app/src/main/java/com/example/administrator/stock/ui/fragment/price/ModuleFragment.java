@@ -191,6 +191,7 @@ public class ModuleFragment extends BaseFragment {
                 @Override
                 public void onClick(View v) {
                     Toast.makeText(getActivity(), "" + position, Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getActivity(), PlateActivity.class));
                 }
             });
 

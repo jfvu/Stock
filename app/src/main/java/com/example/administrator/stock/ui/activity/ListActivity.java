@@ -1,5 +1,6 @@
 package com.example.administrator.stock.ui.activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,7 +12,6 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.administrator.stock.R;
 import com.zhy.autolayout.utils.AutoUtils;
@@ -72,6 +72,7 @@ public class ListActivity extends BaseActivity {
                 finish();
                 break;
             case R.id.tv_set_activity_list:
+                startActivity(new Intent(this,ShowSetActivity.class));
                 break;
         }
     }
@@ -90,7 +91,8 @@ public class ListActivity extends BaseActivity {
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(ListActivity.this, ""+position, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(ListActivity.this, ""+position, Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(ListActivity.this,PlayerActivity.class));
                 }
             });
 
