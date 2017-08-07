@@ -2,6 +2,7 @@ package com.example.administrator.stock.ui.activity;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -29,6 +30,8 @@ public class StrategyActivity extends BaseActivity {
     @BindView(R.id.vp_activity_strategy)
     ViewPager mVpActivityStrategy;
     private StrategyFragmentAdapter mStrategyFragmentAdapter;
+    private boolean flag = false;
+    private final static int REQUEST_CODE=1;
 
     @Override
     protected void initData() {
@@ -54,6 +57,14 @@ public class StrategyActivity extends BaseActivity {
         mTlActivityStrategy.setTabGravity(TabLayout.GRAVITY_FILL);
         mVpActivityStrategy.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mTlActivityStrategy));
         mTlActivityStrategy.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mVpActivityStrategy));
+
+        if(!flag){
+            mTvCheckinActivityStrategy.setText("入驻");
+
+        }else {
+            mTvCheckinActivityStrategy.setText("创建");
+        }
+
     }
 
     @Override
@@ -80,8 +91,33 @@ public class StrategyActivity extends BaseActivity {
                 finish();
                 break;
             case R.id.tv_checkin_activity_strategy:
-                startActivity(new Intent(this,EnterActivity.class));
+                if (!flag){
+                    Intent intent=new Intent();
+                    intent.setClass(this, EnterActivity.class);
+                    intent.putExtra("str", "Intent Demo");
+                    startActivityForResult(intent, REQUEST_CODE);
+
+                }else {
+                    startActivity(new Intent(this,CreateTacticsActivity.class));
+                }
                 break;
         }
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode==REQUEST_CODE)
+        {
+            if (resultCode==EnterActivity.RESULT_CODE)
+            {
+                Bundle bundle=data.getExtras();
+                String str=bundle.getString("back");
+                flag = true;
+                mTvCheckinActivityStrategy.setText("创建");
+            }
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+
+        }
+
 }

@@ -1,5 +1,6 @@
 package com.example.administrator.stock.ui.activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -20,6 +21,7 @@ public class EnterActivity extends BaseActivity {
     RelativeLayout mImgReturnActivityEnter;
     @BindView(R.id.tv_finish)
     TextView mTvFinish;
+    public final static int RESULT_CODE=1;
 
     @Override
     protected void initData() {
@@ -54,8 +56,16 @@ public class EnterActivity extends BaseActivity {
                 finish();
                 break;
             case R.id.tv_finish:
+                Intent intent=new Intent();
+                intent.putExtra("back", "Back Data");
+                setResult(RESULT_CODE, intent);
                 finish();
                 break;
         }
+    }
+
+    @Override
+    public void startActivityForResult(Intent intent, int requestCode) {
+        super.startActivityForResult(intent, requestCode);
     }
 }
