@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:layout_gravity="center_horizontal"
-        android:textSize="10px"
+        android:textSize="8px"
         android:textColor="#ffffff"
         />
 </LinearLayout>

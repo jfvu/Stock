@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.stock.R;
+import com.example.administrator.stock.ui.activity.MorePlateActivity;
 import com.example.administrator.stock.ui.activity.PlateActivity;
 import com.example.administrator.stock.ui.fragment.BaseFragment;
 import com.zhy.autolayout.utils.AutoUtils;
@@ -66,6 +67,7 @@ public class ModuleFragment extends BaseFragment {
     Unbinder unbinder;
     private List<Center> mCenters;
     private boolean industry,idea,rise;
+    private Intent mIntent;
 
     @Override
     protected int getLayoutId() {
@@ -133,6 +135,8 @@ public class ModuleFragment extends BaseFragment {
                 }
                 break;
             case R.id.img_industrymore_fragment_module:
+                mIntent = new Intent(getActivity(), MorePlateActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.rl_ideaopen_fragment_module:
                 if (!idea){
@@ -148,6 +152,8 @@ public class ModuleFragment extends BaseFragment {
                 }
                 break;
             case R.id.img_ideamore_fragment_module:
+                mIntent = new Intent(getActivity(), MorePlateActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.rl_riseopen_fragment_module:
                 if (!rise){
@@ -163,6 +169,8 @@ public class ModuleFragment extends BaseFragment {
                 }
                 break;
             case R.id.img_risemore_fragment_module:
+                mIntent = new Intent(getActivity(), MorePlateActivity.class);
+                startActivity(mIntent);
                 break;
         }
     }

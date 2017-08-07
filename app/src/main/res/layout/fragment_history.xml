@@ -3,6 +3,17 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
 <ImageView
     android:layout_width="match_parent"
     android:layout_height="201px"
@@ -38,7 +49,69 @@
             android:layout_marginLeft="5px"/>
     </LinearLayout>
     <android.support.v7.widget.RecyclerView
-
+        android:id="@+id/rv_fragment_history"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48px"
+        android:background="#ffffff"
+        android:layout_marginTop="8px"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#ff0000">
+<ImageView
+    android:layout_width="13px"
+    android:layout_height="12px"
+    android:src="@drawable/history_1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="参与讨论"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14px"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/shape_history_bottom">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="14px"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="12px"
+                    android:layout_height="12px"
+                    android:src="@drawable/history_2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即订阅"
+                    android:textColor="#FFFF0000"
+                    android:textSize="14px"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金币:16"
+                android:textColor="#FFFF0000"
+                android:textSize="6px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2px"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
 </LinearLayout>

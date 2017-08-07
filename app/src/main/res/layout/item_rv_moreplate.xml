@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:id="@+id/ll_item_rv_moreplate"
+              android:layout_height="44px"
+    android:layout_marginTop="1px"
+    android:background="#ffffff"
+    android:gravity="center">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:text="航空航天"
+    android:textColor="#E6121212"
+    android:textSize="16px"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="+2.76%"
+        android:textColor="#FFFF0000"
+        android:textSize="16px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="中航重机"
+        android:textColor="#E6121212"
+        android:textSize="16px"/>
+</LinearLayout>

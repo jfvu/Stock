@@ -133,6 +133,8 @@
         </activity>
         <activity android:name=".ui.activity.PlayerActivity">
         </activity>
+        <activity android:name=".ui.activity.MorePlateActivity">
+        </activity>
     </application>
 
 </manifest>
