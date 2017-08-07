@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.administrator.stock.R;
@@ -19,7 +20,7 @@ public class ChatActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_chat)
     LinearLayout mLlStatusActivityChat;
     @BindView(R.id.img_return_activity_chat)
-    ImageView mImgReturnActivityChat;
+    RelativeLayout mImgReturnActivityChat;
     @BindView(R.id.tv_just)
     TextView mTvJust;
     @BindView(R.id.img_face)

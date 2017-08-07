@@ -16,12 +16,18 @@
         android:layout_width="match_parent"
         android:layout_height="44px"
         android:background="#ff0000">
-        <ImageView
+        <RelativeLayout
             android:id="@+id/img_return_activity_strategy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/all_return"
-            android:padding="12px"/>
+            android:layout_width="35px"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:layout_width="13px"
+                android:layout_height="22px"
+                android:src="@drawable/all_return"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="36px"
         android:background="#ffffff"
-        app:tabIndicatorHeight="2px"
+        app:tabIndicatorHeight="3px"
         app:tabIndicatorColor="#ff0000"
         app:tabSelectedTextColor="#ff0000"
         app:tabTextColor="#40121212"

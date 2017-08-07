@@ -5,8 +5,8 @@ import android.graphics.Color;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.administrator.stock.R;
@@ -21,7 +21,7 @@ public class StrategyActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_strategy)
     LinearLayout mLlStatusActivityStrategy;
     @BindView(R.id.img_return_activity_strategy)
-    ImageView mImgReturnActivityStrategy;
+    RelativeLayout mImgReturnActivityStrategy;
     @BindView(R.id.tv_checkin_activity_strategy)
     TextView mTvCheckinActivityStrategy;
     @BindView(R.id.tl_activity_strategy)

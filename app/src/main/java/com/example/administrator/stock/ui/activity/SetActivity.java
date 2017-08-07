@@ -3,7 +3,6 @@ package com.example.administrator.stock.ui.activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
@@ -18,7 +17,7 @@ public class SetActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_set)
     LinearLayout mLlStatusActivitySet;
     @BindView(R.id.img_return_activity_set)
-    ImageView mImgReturnActivitySet;
+    RelativeLayout mImgReturnActivitySet;
     @BindView(R.id.rl_phone_activity_set)
     RelativeLayout mRlPhoneActivitySet;
     @BindView(R.id.rl_font_activity_set)

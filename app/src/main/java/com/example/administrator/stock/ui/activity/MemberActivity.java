@@ -6,9 +6,9 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 import com.example.administrator.stock.ui.view.MemberPop;
@@ -22,7 +22,7 @@ public class MemberActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_member)
     LinearLayout mLlStatusActivityMember;
     @BindView(R.id.img_return_activity_member)
-    ImageView mImgReturnActivityMember;
+    RelativeLayout mImgReturnActivityMember;
     @BindView(R.id.ll_vip3_activity_member)
     LinearLayout mLlVip3ActivityMember;
     @BindView(R.id.ll_vip4_activity_member)

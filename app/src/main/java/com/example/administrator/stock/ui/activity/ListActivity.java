@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
@@ -25,7 +24,7 @@ public class ListActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_list)
     LinearLayout mLlStatusActivityList;
     @BindView(R.id.img_return_activity_list)
-    ImageView mImgReturnActivityList;
+    RelativeLayout mImgReturnActivityList;
     @BindView(R.id.rb_all_activity_list)
     RadioButton mRbAllActivityList;
     @BindView(R.id.rb_week_activity_list)

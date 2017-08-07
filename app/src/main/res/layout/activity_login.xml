@@ -98,11 +98,12 @@
             android:background="#40323232"
             android:layout_marginTop="5px"/>
     </LinearLayout>
-    <Button
+    <TextView
         android:id="@+id/btn_login_activity_login"
         android:layout_width="match_parent"
+        android:gravity="center"
         android:layout_height="48px"
-        android:background="@drawable/shape_login"
+        android:background="@drawable/shape_login2"
         android:layout_below="@id/ll_mima_activity_login"
         android:layout_marginTop="36px"
         android:layout_marginRight="78px"

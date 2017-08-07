@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -26,7 +25,7 @@ public class MessageActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_message)
     LinearLayout mLlStatusActivityMessage;
     @BindView(R.id.img_return_activity_message)
-    ImageView mImgReturnActivityMessage;
+    RelativeLayout mImgReturnActivityMessage;
     @BindView(R.id.rv_activity_message)
     RecyclerView mRvActivityMessage;
     private Intent mIntent;

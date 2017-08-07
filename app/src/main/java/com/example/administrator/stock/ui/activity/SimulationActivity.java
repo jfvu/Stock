@@ -21,7 +21,7 @@ public class SimulationActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_simulation)
     LinearLayout mLlStatusActivitySimulation;
     @BindView(R.id.img_return_activity_simulation)
-    ImageView mImgReturnActivitySimulation;
+    RelativeLayout mImgReturnActivitySimulation;
     @BindView(R.id.img_refresh_activity_simulation)
     ImageView mImgRefreshActivitySimulation;
     @BindView(R.id.rl_account_activity_simulation)

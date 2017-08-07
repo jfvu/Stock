@@ -20,7 +20,7 @@ public class RuleActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_rule)
     LinearLayout mLlStatusActivityRule;
     @BindView(R.id.img_return_activity_rule)
-    ImageView mImgReturnActivityRule;
+    RelativeLayout mImgReturnActivityRule;
     @BindView(R.id.tv_title_center_activity_rule)
     TextView mTvTitleCenterActivityRule;
     @BindView(R.id.rl_index_activity_rule)

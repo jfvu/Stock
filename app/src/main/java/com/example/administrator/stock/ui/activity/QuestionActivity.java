@@ -7,9 +7,9 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 import com.example.administrator.stock.ui.view.QuestionPop;
@@ -22,7 +22,7 @@ public class QuestionActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_question)
     LinearLayout mLlStatusActivityQuestion;
     @BindView(R.id.img_return_activity_question)
-    ImageView mImgReturnActivityQuestion;
+    RelativeLayout mImgReturnActivityQuestion;
     @BindView(R.id.btn_submit_activity_question)
     Button mBtnSubmitActivityQuestion;
     private QuestionPop mQuestionPop;

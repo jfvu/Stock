@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
@@ -20,7 +19,7 @@ public class AddTacticsActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_addtactics)
     LinearLayout mLlStatusActivityAddtactics;
     @BindView(R.id.img_return_activity_addtactics)
-    ImageView mImgReturnActivityAddtactics;
+    RelativeLayout mImgReturnActivityAddtactics;
     @BindView(R.id.rl_name_activity_tactics)
     RelativeLayout mRlNameActivityTactics;
     @BindView(R.id.rl_appoint_activity_tactics)

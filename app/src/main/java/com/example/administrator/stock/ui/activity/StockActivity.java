@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 
@@ -19,7 +20,7 @@ public class StockActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_stock)
     LinearLayout mLlStatusActivityStock;
     @BindView(R.id.img_return_activity_stock)
-    ImageView mImgReturnActivityStock;
+    RelativeLayout mImgReturnActivityStock;
     @BindView(R.id.img_refresh_activity_stock)
     ImageView mImgRefreshActivityStock;
     @BindView(R.id.img_1)

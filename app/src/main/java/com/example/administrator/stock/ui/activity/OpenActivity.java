@@ -6,8 +6,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.example.administrator.stock.R;
@@ -22,7 +22,7 @@ public class OpenActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_open)
     LinearLayout mLlStatusActivityOpen;
     @BindView(R.id.img_return_activity_open)
-    ImageView mImgReturnActivityOpen;
+    RelativeLayout mImgReturnActivityOpen;
     @BindView(R.id.rv_activity_open)
     RecyclerView mRvActivityOpen;
 

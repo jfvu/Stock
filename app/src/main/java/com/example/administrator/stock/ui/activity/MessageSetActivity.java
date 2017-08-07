@@ -1,9 +1,7 @@
 package com.example.administrator.stock.ui.activity;
 
 import android.graphics.Color;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
@@ -11,7 +9,6 @@ import com.example.administrator.stock.R;
 import com.zcw.togglebutton.ToggleButton;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MessageSetActivity extends BaseActivity {
@@ -20,7 +17,7 @@ public class MessageSetActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_messageset)
     LinearLayout mLlStatusActivityMessageset;
     @BindView(R.id.img_return_activity_messageset)
-    ImageView mImgReturnActivityMessageset;
+    RelativeLayout mImgReturnActivityMessageset;
     @BindView(R.id.tb_1_activity_messageset)
     ToggleButton mTb1ActivityMessageset;
     @BindView(R.id.tb_2_activity_messageset)

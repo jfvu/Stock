@@ -1,8 +1,8 @@
 package com.example.administrator.stock.ui.activity;
 
 import android.graphics.Color;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 
@@ -15,7 +15,7 @@ public class Condition1Activity extends BaseActivity {
     @BindView(R.id.ll_status_activity_condition)
     LinearLayout mLlStatusActivityCondition;
     @BindView(R.id.img_return_activity_condition)
-    ImageView mImgReturnActivityCondition;
+    RelativeLayout mImgReturnActivityCondition;
 
 
     @Override

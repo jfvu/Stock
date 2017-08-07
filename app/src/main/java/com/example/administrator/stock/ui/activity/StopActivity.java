@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 
@@ -17,7 +18,7 @@ public class StopActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_stop)
     LinearLayout mLlStatusActivityStop;
     @BindView(R.id.img_return_activity_stop)
-    ImageView mImgReturnActivityStop;
+    RelativeLayout mImgReturnActivityStop;
     @BindView(R.id.img_open1_activity_stop)
     ImageView mImgOpen1ActivityStop;
     @BindView(R.id.btn_change1_activity_stop)

@@ -3,8 +3,8 @@ package com.example.administrator.stock.ui.activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 
@@ -17,7 +17,7 @@ public class WarnActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_warn)
     LinearLayout mLlStatusActivityWarn;
     @BindView(R.id.img_return_activity_warn)
-    ImageView mImgReturnActivityWarn;
+    RelativeLayout mImgReturnActivityWarn;
     @BindView(R.id.ll_formula)
     LinearLayout mLlFormula;
     @BindView(R.id.ll_tendency)

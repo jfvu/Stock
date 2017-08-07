@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
@@ -31,7 +30,7 @@ public class ConditionActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_condition)
     LinearLayout mLlStatusActivityCondition;
     @BindView(R.id.img_return_activity_condition)
-    ImageView mImgReturnActivityCondition;
+    RelativeLayout mImgReturnActivityCondition;
     @BindView(R.id.tv_finish)
     TextView mTvFinish;
     @BindView(R.id.ll_updown_activity_condition)

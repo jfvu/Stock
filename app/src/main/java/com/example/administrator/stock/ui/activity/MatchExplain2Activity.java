@@ -1,8 +1,8 @@
 package com.example.administrator.stock.ui.activity;
 
 import android.graphics.Color;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 
@@ -15,7 +15,7 @@ public class MatchExplain2Activity extends BaseActivity {
     @BindView(R.id.ll_status_activity_matchexplain2)
     LinearLayout mLlStatusActivityMatchexplain2;
     @BindView(R.id.img_return_activity_matchexplain2)
-    ImageView mImgReturnActivityMatchexplain2;
+    RelativeLayout mImgReturnActivityMatchexplain2;
 
     @Override
     protected void initData() {

@@ -41,7 +41,8 @@
                 android:layout_height="wrap_content"
                 android:text="10"
                 android:textColor="#FFFF0000"
-                android:textSize="16px"/>
+                android:textSize="16px"
+                android:layout_marginLeft="3px"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -59,7 +60,8 @@
                 android:layout_height="wrap_content"
                 android:text="50"
                 android:textColor="#FFFF0000"
-                android:textSize="16px"/>
+                android:textSize="16px"
+                android:layout_marginLeft="3px"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -77,7 +79,8 @@
                 android:layout_height="wrap_content"
                 android:text="100"
                 android:textColor="#FFFF0000"
-                android:textSize="16px"/>
+                android:textSize="16px"
+                android:layout_marginLeft="3px"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -103,7 +106,8 @@
                 android:layout_height="wrap_content"
                 android:text="200"
                 android:textColor="#FFFF0000"
-                android:textSize="16px"/>
+                android:textSize="16px"
+                android:layout_marginLeft="3px"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -121,7 +125,8 @@
                 android:layout_height="wrap_content"
                 android:text="666"
                 android:textColor="#FFFF0000"
-                android:textSize="16px"/>
+                android:textSize="16px"
+                android:layout_marginLeft="3px"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -139,7 +144,8 @@
                 android:layout_height="wrap_content"
                 android:text="1000"
                 android:textColor="#FFFF0000"
-                android:textSize="16px"/>
+                android:textSize="16px"
+                android:layout_marginLeft="3px"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -159,13 +165,15 @@
             <ImageView
                 android:layout_width="11px"
                 android:layout_height="10px"
-                android:src="@drawable/pop_wx"/>
+                android:src="@drawable/pop_wx"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="微信支付"
                 android:textColor="#FF00B700"
-                android:textSize="10px"/>
+                android:textSize="10px"
+                android:layout_marginLeft="3px"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/ll_zfb_wallet"
@@ -184,7 +192,8 @@
                 android:layout_height="wrap_content"
                 android:text="支付宝支付"
                 android:textColor="#FF108EE9"
-                android:textSize="10px"/>
+                android:textSize="10px"
+                android:layout_marginLeft="3px"/>
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

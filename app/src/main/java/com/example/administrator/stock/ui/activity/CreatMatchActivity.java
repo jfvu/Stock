@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
@@ -25,7 +24,7 @@ public class CreatMatchActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_creatmatch)
     LinearLayout mLlStatusActivityCreatmatch;
     @BindView(R.id.img_return_activity_creatmatch)
-    ImageView mImgReturnActivityCreatmatch;
+    RelativeLayout mImgReturnActivityCreatmatch;
     @BindView(R.id.rl_class_activity_creatmatch)
     RelativeLayout mRlClassActivityCreatmatch;
     @BindView(R.id.tv_cooperation_activity_creatmatch)

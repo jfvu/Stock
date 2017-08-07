@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 
@@ -19,7 +20,7 @@ public class AppointActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_appoint)
     LinearLayout mLlStatusActivityAppoint;
     @BindView(R.id.img_return_activity_appoint)
-    ImageView mImgReturnActivityAppoint;
+    RelativeLayout mImgReturnActivityAppoint;
     @BindView(R.id.img_open1_activity_appoint)
     ImageView mImgOpen1ActivityAppoint;
     @BindView(R.id.btn_change1_activity_appoint)

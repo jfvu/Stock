@@ -11,9 +11,9 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 import com.example.administrator.stock.ui.view.WalletPop;
@@ -28,7 +28,7 @@ public class WalletActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_wallet)
     LinearLayout mLlStatusActivityWallet;
     @BindView(R.id.img_return_activity_wallet)
-    ImageView mImgReturnActivityWallet;
+    RelativeLayout mImgReturnActivityWallet;
     @BindView(R.id.btn_recharge_activity_wallet)
     Button mBtnRechargeActivityWallet;
     @BindView(R.id.rv_activity_wallet)

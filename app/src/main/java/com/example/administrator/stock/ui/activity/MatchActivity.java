@@ -13,7 +13,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
@@ -35,7 +34,7 @@ public class MatchActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_match)
     LinearLayout mLlStatusActivityMatch;
     @BindView(R.id.img_return_activity_match)
-    ImageView mImgReturnActivityMatch;
+    RelativeLayout mImgReturnActivityMatch;
     @BindView(R.id.tv_creat_activity_match)
     TextView mTvCreatActivityMatch;
     @BindView(R.id.tv_show_activity_match)

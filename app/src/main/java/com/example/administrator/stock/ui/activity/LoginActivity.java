@@ -3,7 +3,6 @@ package com.example.administrator.stock.ui.activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -19,7 +18,7 @@ public class LoginActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_login)
     LinearLayout mLlStatusActivityLogin;
     @BindView(R.id.btn_login_activity_login)
-    Button mBtnLoginActivityLogin;
+    TextView mBtnLoginActivityLogin;
     @BindView(R.id.tv_register_activity_login)
     TextView mTvRegisterActivityLogin;
     @BindView(R.id.tv_forget_activity_login)

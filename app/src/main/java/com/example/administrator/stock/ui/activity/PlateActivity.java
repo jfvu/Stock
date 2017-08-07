@@ -6,6 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 import com.example.administrator.stock.adapter.PlateFragmentAdapter;
@@ -19,7 +20,7 @@ public class PlateActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_plate)
     LinearLayout mLlStatusActivityPlate;
     @BindView(R.id.img_return_activity_plate)
-    ImageView mImgReturnActivityPlate;
+    RelativeLayout mImgReturnActivityPlate;
     @BindView(R.id.img_refresh_activity_plate)
     ImageView mImgRefreshActivityPlate;
     @BindView(R.id.ll_average)

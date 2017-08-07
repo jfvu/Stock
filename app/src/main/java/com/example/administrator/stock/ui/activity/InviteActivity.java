@@ -8,8 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 import com.zhy.autolayout.utils.AutoUtils;
@@ -24,7 +24,7 @@ public class InviteActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_invite)
     LinearLayout mLlStatusActivityInvite;
     @BindView(R.id.img_return_activity_invite)
-    ImageView mImgReturnActivityInvite;
+    RelativeLayout mImgReturnActivityInvite;
     @BindView(R.id.btn_download_activity_invite)
     Button mBtnDownloadActivityInvite;
     @BindView(R.id.rv_activity_invite)

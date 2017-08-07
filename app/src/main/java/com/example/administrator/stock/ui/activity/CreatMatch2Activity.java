@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
@@ -18,7 +17,7 @@ public class CreatMatch2Activity extends BaseActivity {
     @BindView(R.id.ll_status_activity_creatmatch2)
     LinearLayout mLlStatusActivityCreatmatch2;
     @BindView(R.id.img_return_activity_creatmatch2)
-    ImageView mImgReturnActivityCreatmatch2;
+    RelativeLayout mImgReturnActivityCreatmatch2;
     @BindView(R.id.rl_way_activity_creatmatch2)
     RelativeLayout mRlWayActivityCreatmatch2;
     @BindView(R.id.rl_explain_activity_creatmatch2)

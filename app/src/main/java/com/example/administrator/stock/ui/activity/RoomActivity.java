@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 import com.example.administrator.stock.adapter.RoomFragmentAdapter;
@@ -21,7 +22,7 @@ public class RoomActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_room)
     LinearLayout mLlStatusActivityRoom;
     @BindView(R.id.img_return_activity_room)
-    ImageView mImgReturnActivityRoom;
+    RelativeLayout mImgReturnActivityRoom;
     @BindView(R.id.img_seach_activity_room)
     ImageView mImgSeachActivityRoom;
     @BindView(R.id.btn_attention)

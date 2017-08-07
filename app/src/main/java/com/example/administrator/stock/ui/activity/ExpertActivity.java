@@ -3,8 +3,8 @@ package com.example.administrator.stock.ui.activity;
 import android.graphics.Color;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 import com.example.administrator.stock.adapter.ExpertFragmentAdapter;
@@ -18,7 +18,7 @@ public class ExpertActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_expert)
     LinearLayout mLlStatusActivityExpert;
     @BindView(R.id.img_return_activity_expert)
-    ImageView mImgReturnActivityExpert;
+    RelativeLayout mImgReturnActivityExpert;
     @BindView(R.id.tl_activity_expert)
     TabLayout mTlActivityExpert;
     @BindView(R.id.vp_activity_expert)

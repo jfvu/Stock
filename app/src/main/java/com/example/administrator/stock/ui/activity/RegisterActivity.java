@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.administrator.stock.R;
@@ -19,11 +19,11 @@ public class RegisterActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_register)
     LinearLayout mLlStatusActivityRegister;
     @BindView(R.id.img_return_activity_register)
-    ImageView mImgReturnActivityRegister;
+    RelativeLayout mImgReturnActivityRegister;
     @BindView(R.id.btn_getcode_activity_register)
     Button mBtnGetcodeActivityRegister;
     @BindView(R.id.btn_sure_activity_register)
-    Button mBtnSureActivityRegister;
+    TextView mBtnSureActivityRegister;
     @BindView(R.id.tv_return_activity_register)
     TextView mTvReturnActivityRegister;
     @BindView(R.id.tv_declaration_activity_register)

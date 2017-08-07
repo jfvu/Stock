@@ -3,8 +3,8 @@ package com.example.administrator.stock.ui.activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.administrator.stock.R;
@@ -19,7 +19,7 @@ public class FormulaActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_formula)
     LinearLayout mLlStatusActivityFormula;
     @BindView(R.id.img_return_activity_formula)
-    ImageView mImgReturnActivityFormula;
+    RelativeLayout mImgReturnActivityFormula;
     @BindView(R.id.tv_edit_activity_formula)
     TextView mTvEditActivityFormula;
 

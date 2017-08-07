@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
@@ -34,7 +33,7 @@ public class AiActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_ai)
     LinearLayout mLlStatusActivityAi;
     @BindView(R.id.img_return_activity_ai)
-    ImageView mImgReturnActivityAi;
+    RelativeLayout mImgReturnActivityAi;
     @BindView(R.id.tv_creat_activity_ai)
     TextView mTvCreatActivityAi;
     @BindView(R.id.rb_all_activity_ai)

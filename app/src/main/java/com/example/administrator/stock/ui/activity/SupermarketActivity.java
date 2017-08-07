@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.administrator.stock.R;
@@ -21,7 +21,7 @@ public class SupermarketActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_supermarket)
     LinearLayout mLlStatusActivitySupermarket;
     @BindView(R.id.img_return_activity_supermarket)
-    ImageView mImgReturnActivitySupermarket;
+    RelativeLayout mImgReturnActivitySupermarket;
     @BindView(R.id.tv_ranking_activity_supermarket)
     TextView mTvRankingActivitySupermarket;
     @BindView(R.id.tl_activity_supermarket)

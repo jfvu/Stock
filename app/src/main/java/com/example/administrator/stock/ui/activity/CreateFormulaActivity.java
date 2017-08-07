@@ -5,8 +5,8 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 
@@ -20,7 +20,7 @@ public class CreateFormulaActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_createformula)
     LinearLayout mLlStatusActivityCreateformula;
     @BindView(R.id.img_return_activity_createformula)
-    ImageView mImgReturnActivityCreateformula;
+    RelativeLayout mImgReturnActivityCreateformula;
     @BindView(R.id.btn_next_activity_createformula)
     Button mBtnNextActivityCreateformula;
 

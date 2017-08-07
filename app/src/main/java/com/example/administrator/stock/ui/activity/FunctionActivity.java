@@ -7,8 +7,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 import com.zhy.autolayout.utils.AutoUtils;
@@ -22,7 +22,7 @@ public class FunctionActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_function)
     LinearLayout mLlStatusActivityFunction;
     @BindView(R.id.img_return_activity_function)
-    ImageView mImgReturnActivityFunction;
+    RelativeLayout mImgReturnActivityFunction;
     @BindView(R.id.rv_activity_function)
     RecyclerView mRvActivityFunction;
 

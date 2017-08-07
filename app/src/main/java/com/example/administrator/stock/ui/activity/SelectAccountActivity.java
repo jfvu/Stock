@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 import com.zhy.autolayout.utils.AutoUtils;
@@ -21,7 +21,7 @@ public class SelectAccountActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_selectaccount)
     LinearLayout mLlStatusActivitySelectaccount;
     @BindView(R.id.img_return_activity_selectaccount)
-    ImageView mImgReturnActivitySelectaccount;
+    RelativeLayout mImgReturnActivitySelectaccount;
     @BindView(R.id.rv_activity_selectaccount)
     RecyclerView mRvActivitySelectaccount;
 

@@ -5,8 +5,8 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 import com.example.administrator.stock.adapter.MatchExplainFragmentAdapter;
@@ -20,7 +20,7 @@ public class MatchExplainActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_matchexplain)
     LinearLayout mLlStatusActivityMatchexplain;
     @BindView(R.id.img_return_activity_matchexplain)
-    ImageView mImgReturnActivityMatchexplain;
+    RelativeLayout mImgReturnActivityMatchexplain;
     @BindView(R.id.tl_activity_matchexplain)
     TabLayout mTlActivityMatchexplain;
     @BindView(R.id.vp_activity_matchexplain)

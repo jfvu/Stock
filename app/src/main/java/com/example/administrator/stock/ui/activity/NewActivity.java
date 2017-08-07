@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -23,7 +22,7 @@ public class NewActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_new)
     LinearLayout mLlStatusActivityNew;
     @BindView(R.id.img_return_activity_new)
-    ImageView mImgReturnActivityNew;
+    RelativeLayout mImgReturnActivityNew;
     @BindView(R.id.tv_collect_activity_new)
     TextView mTvCollectActivityNew;
     @BindView(R.id.rv_activity_new)

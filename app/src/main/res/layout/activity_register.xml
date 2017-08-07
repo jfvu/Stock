@@ -16,13 +16,19 @@
         android:layout_height="44px"
         android:layout_below="@id/ll_status_activity_register"
         android:background="#ff0000">
-    <ImageView
-        android:id="@+id/img_return_activity_register"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/all_return"
-    android:padding="12px"
-    />
+        <RelativeLayout
+            android:id="@+id/img_return_activity_register"
+            android:layout_width="35px"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:layout_width="13px"
+                android:layout_height="22px"
+                android:src="@drawable/all_return"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -166,15 +172,16 @@
         android:text="注册既同意《XX APP 免责申明》"
         android:textColor="#40121212"
         android:textSize="14px"/>
-    <Button
+    <TextView
         android:id="@+id/btn_sure_activity_register"
         android:layout_width="match_parent"
+        android:gravity="center"
         android:layout_height="48px"
         android:layout_marginLeft="78px"
         android:layout_marginRight="78px"
         android:layout_below="@id/rl_title_activity_register"
         android:layout_marginTop="390px"
-        android:background="@drawable/shape_login"
+        android:background="@drawable/shape_login2"
         android:text="确认注册"
         android:textColor="#FFFF0000"
         android:textSize="18px"/>
