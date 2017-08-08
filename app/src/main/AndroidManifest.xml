@@ -137,6 +137,16 @@
         </activity>
         <activity android:name=".ui.activity.CreateTacticsActivity">
         </activity>
+        <activity android:name=".ui.activity.OperateActivity">
+        </activity>
+        <activity android:name=".ui.activity.ReleaseActivity">
+        </activity>
+        <activity android:name=".ui.activity.SingleTestActivity">
+        </activity>
+        <activity android:name=".ui.activity.OverallTestActivity">
+        </activity>
+        <activity android:name=".ui.activity.ReportActivity">
+        </activity>
     </application>
 
 </manifest>

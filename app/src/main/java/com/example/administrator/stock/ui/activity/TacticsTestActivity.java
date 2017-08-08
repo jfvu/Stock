@@ -1,5 +1,6 @@
 package com.example.administrator.stock.ui.activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -26,8 +27,10 @@ public class TacticsTestActivity extends BaseActivity {
     TabLayout mTlActivityTacticstest;
     @BindView(R.id.vp_activity_tacticstest)
     ViewPager mVpActivityTacticstest;
+    @BindView(R.id.ll_release)
+    LinearLayout mLlRelease;
     private TacticsTestFragmentAdapter mTacticsTestFragmentAdapter;
-
+    public final static int RESULT_CODE=2;
     @Override
     protected void initData() {
 
@@ -35,7 +38,7 @@ public class TacticsTestActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-        mTacticsTestFragmentAdapter = new TacticsTestFragmentAdapter(getSupportFragmentManager(),getApplication());
+        mTacticsTestFragmentAdapter = new TacticsTestFragmentAdapter(getSupportFragmentManager(), getApplication());
         mVpActivityTacticstest.setAdapter(mTacticsTestFragmentAdapter);
         mTlActivityTacticstest.setupWithViewPager(mVpActivityTacticstest);
 
@@ -69,14 +72,19 @@ public class TacticsTestActivity extends BaseActivity {
     }
 
 
-    @OnClick({R.id.img_return_activity_ticticstest, R.id.tv_save_activity_tacticstest})
+    @OnClick({R.id.img_return_activity_ticticstest, R.id.tv_save_activity_tacticstest,R.id.ll_release})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.img_return_activity_ticticstest:
                 finish();
                 break;
             case R.id.tv_save_activity_tacticstest:
+                Intent intent=new Intent();
+                setResult(RESULT_CODE, intent);
                 finish();
+                break;
+            case R.id.ll_release:
+                startActivity(new Intent(this,SupermarketActivity.class));
                 break;
         }
     }

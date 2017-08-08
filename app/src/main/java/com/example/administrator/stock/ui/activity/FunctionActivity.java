@@ -72,7 +72,8 @@ public class FunctionActivity extends BaseActivity {
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(FunctionActivity.this,PreviewActivity.class));
+                    //startActivity(new Intent(FunctionActivity.this,PreviewActivity.class));
+                    startActivity(new Intent(FunctionActivity.this,ReleaseActivity.class));
                 }
             });
         }

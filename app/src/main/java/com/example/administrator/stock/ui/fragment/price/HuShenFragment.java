@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.stock.R;
+import com.example.administrator.stock.ui.activity.MorePlateActivity;
 import com.example.administrator.stock.ui.activity.PlateActivity;
 import com.example.administrator.stock.ui.activity.StockActivity;
 import com.example.administrator.stock.ui.fragment.BaseFragment;
@@ -69,6 +70,7 @@ public class HuShenFragment extends BaseFragment {
     private boolean list,rise,fall;
     private List<Price> mPrices;
     private List<Center> mCenters;
+    private Intent mIntent;
 
     @Override
     protected int getLayoutId() {
@@ -144,6 +146,8 @@ public class HuShenFragment extends BaseFragment {
                 }
                 break;
             case R.id.img_listmore_fragment_hushen:
+                mIntent = new Intent(getActivity(), MorePlateActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.rl_riseopen_fragment_hushen:
                 if (!rise){
@@ -159,6 +163,8 @@ public class HuShenFragment extends BaseFragment {
                 }
                 break;
             case R.id.img_risemore_fragment_hushen:
+                mIntent = new Intent(getActivity(), MorePlateActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.rl_fallopen_fragment_hushen:
                 if (!fall){
@@ -174,6 +180,8 @@ public class HuShenFragment extends BaseFragment {
                 }
                 break;
             case R.id.img_fallmore_fragment_hushen:
+                mIntent = new Intent(getActivity(), MorePlateActivity.class);
+                startActivity(mIntent);
                 break;
         }
     }

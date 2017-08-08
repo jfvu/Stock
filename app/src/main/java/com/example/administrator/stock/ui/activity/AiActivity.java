@@ -27,6 +27,8 @@ import me.kareluo.ui.OptionMenuView;
 import me.kareluo.ui.PopupMenuView;
 import me.kareluo.ui.PopupView;
 
+import static com.example.administrator.stock.ui.activity.EnterActivity.RESULT_CODE;
+
 public class AiActivity extends BaseActivity {
 
 
@@ -48,7 +50,7 @@ public class AiActivity extends BaseActivity {
     RecyclerView mRvActivityAi;
     //private List<String> popupMenuItemList = new ArrayList<>();
     private PopupMenuView mMenuView;
-
+    private final static int REQUEST_CODE=1;
 
     @Override
     protected void initData() {
@@ -102,7 +104,9 @@ public class AiActivity extends BaseActivity {
                 finish();
                 break;
             case R.id.tv_creat_activity_ai:
-                startActivity(new Intent(AiActivity.this,AddTacticsActivity.class));
+                Intent intent = new Intent();
+                intent.setClass(this, AddTacticsActivity.class);
+                startActivityForResult(intent, REQUEST_CODE);
                 break;
         }
     }
@@ -156,4 +160,16 @@ public class AiActivity extends BaseActivity {
         }
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode==REQUEST_CODE)
+        {
+            if (resultCode== RESULT_CODE)
+            {
+                mRbReleaseActivityAi.setChecked(true);
+
+            }
+        }
+    }
 }

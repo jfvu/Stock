@@ -2,7 +2,6 @@ package com.example.administrator.stock.ui.activity;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -94,7 +93,6 @@ public class StrategyActivity extends BaseActivity {
                 if (!flag){
                     Intent intent=new Intent();
                     intent.setClass(this, EnterActivity.class);
-                    intent.putExtra("str", "Intent Demo");
                     startActivityForResult(intent, REQUEST_CODE);
 
                 }else {
@@ -110,8 +108,6 @@ public class StrategyActivity extends BaseActivity {
         {
             if (resultCode==EnterActivity.RESULT_CODE)
             {
-                Bundle bundle=data.getExtras();
-                String str=bundle.getString("back");
                 flag = true;
                 mTvCheckinActivityStrategy.setText("创建");
             }

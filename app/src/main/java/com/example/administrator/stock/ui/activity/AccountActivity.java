@@ -68,14 +68,29 @@ public class AccountActivity extends BaseActivity {
             case R.id.img_refresh_activity_account:
                 break;
             case R.id.ll_buy_activity_accound:
+                mIntent = new Intent(this,OperateActivity.class);
+                mIntent.putExtra("OperateActivity",0);
+                startActivity(mIntent);
                 break;
             case R.id.ll_sell_activity_accound:
+                mIntent = new Intent(this,OperateActivity.class);
+                mIntent.putExtra("OperateActivity",1);
+                startActivity(mIntent);
                 break;
             case R.id.ll_back_activity_accound:
+                mIntent = new Intent(this,OperateActivity.class);
+                mIntent.putExtra("OperateActivity",2);
+                startActivity(mIntent);
                 break;
             case R.id.ll_hold_activity_accound:
+                mIntent = new Intent(this,OperateActivity.class);
+                mIntent.putExtra("OperateActivity",3);
+                startActivity(mIntent);
                 break;
             case R.id.ll_seach_activity_accound:
+                mIntent = new Intent(this,OperateActivity.class);
+                mIntent.putExtra("OperateActivity",4);
+                startActivity(mIntent);
                 break;
             case R.id.ll_ai_activity_accound:
                 mIntent = new Intent(this,AiActivity.class);

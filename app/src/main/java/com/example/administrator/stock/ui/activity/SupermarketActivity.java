@@ -37,6 +37,7 @@ public class SupermarketActivity extends BaseActivity {
 
     @Override
     protected void initView() {
+        mTvRankingActivitySupermarket.setVisibility(View.GONE);
         mSupermarketFragmentAdapter = new SupermarketFragmentAdapter(getSupportFragmentManager(),getApplication());
         mVpActivitySupermarket.setAdapter(mSupermarketFragmentAdapter);
         mTlActivitySupermarket.setupWithViewPager(mVpActivitySupermarket);
@@ -56,6 +57,26 @@ public class SupermarketActivity extends BaseActivity {
         mTlActivitySupermarket.setTabGravity(TabLayout.GRAVITY_FILL);
         mVpActivitySupermarket.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mTlActivitySupermarket));
         mTlActivitySupermarket.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mVpActivitySupermarket));
+        mVpActivitySupermarket.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if (position == 0 || position == 1 || position == 2|| position == 3 ){
+                    mTvRankingActivitySupermarket.setVisibility(View.GONE);
+                }else {
+                    mTvRankingActivitySupermarket.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
 
     @Override
