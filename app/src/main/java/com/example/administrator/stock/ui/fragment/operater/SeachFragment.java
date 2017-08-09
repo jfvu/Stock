@@ -1,9 +1,14 @@
 package com.example.administrator.stock.ui.fragment.operater;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import com.example.administrator.stock.R;
+import com.example.administrator.stock.ui.activity.DealActivity;
+import com.example.administrator.stock.ui.activity.EntrustActivity;
+import com.example.administrator.stock.ui.activity.HistoryDealActivity;
+import com.example.administrator.stock.ui.activity.HistoryEntrustActivity;
 import com.example.administrator.stock.ui.fragment.BaseFragment;
 
 import butterknife.BindView;
@@ -24,6 +29,7 @@ public class SeachFragment extends BaseFragment {
     @BindView(R.id.ll_historydeal)
     LinearLayout mLlHistorydeal;
     Unbinder unbinder;
+    private Intent mIntent;
 
     @Override
     protected int getLayoutId() {
@@ -45,12 +51,20 @@ public class SeachFragment extends BaseFragment {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ll_entrust:
+                mIntent = new Intent(getActivity(), EntrustActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.ll_deal:
+                mIntent = new Intent(getActivity(), DealActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.ll_historyentrust:
+                mIntent = new Intent(getActivity(), HistoryEntrustActivity.class);
+                startActivity(mIntent);
                 break;
             case R.id.ll_historydeal:
+                mIntent = new Intent(getActivity(), HistoryDealActivity.class);
+                startActivity(mIntent);
                 break;
         }
     }

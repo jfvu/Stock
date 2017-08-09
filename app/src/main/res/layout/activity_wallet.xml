@@ -37,6 +37,19 @@
             android:textSize="17px"
             android:layout_centerInParent="true"/>
     </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"  >
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="104px"
@@ -84,4 +97,6 @@
         android:id="@+id/rv_activity_wallet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

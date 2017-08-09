@@ -1,5 +1,6 @@
 package com.example.administrator.stock.ui.activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.View;
 import android.widget.Button;
@@ -60,12 +61,13 @@ public class PreviewActivity extends BaseActivity {
                 finish();
                 break;
             case R.id.tv_chang_activity_preview:
+                startActivity(new Intent(this,CreateFormulaActivity.class));
                 break;
             case R.id.btn_save_activity_preview:
                 finish();
                 break;
             case R.id.btn_release_activity_preview:
-                finish();
+                startActivity(new Intent(this,SupermarketActivity.class));
                 break;
         }
     }

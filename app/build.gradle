@@ -41,4 +41,5 @@ dependencies {
     compile 'com.zcw:togglebutton-library:1.0.0'
     compile 'me.kareluo.ui:popmenu:1.1.0'
     testCompile 'junit:junit:4.12'
+    compile 'com.contrarywind:Android-PickerView:3.2.5'
 }

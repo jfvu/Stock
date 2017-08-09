@@ -1,5 +1,6 @@
 package com.example.administrator.stock.ui.fragment.equation;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.administrator.stock.R;
+import com.example.administrator.stock.ui.activity.PreferencesActivity;
 import com.example.administrator.stock.ui.fragment.BaseFragment;
 
 import butterknife.BindView;
@@ -59,6 +61,7 @@ public class ComponentFragment extends BaseFragment {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_edit_fragment_component:
+                startActivity(new Intent(getActivity(), PreferencesActivity.class));
                 break;
             case R.id.btn_equation_fragment_component:
                 break;

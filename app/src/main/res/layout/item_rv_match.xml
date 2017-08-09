@@ -69,7 +69,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginRight="12px"
-        android:layout_marginBottom="10px"
+        android:layout_marginBottom="12px"
         android:orientation="horizontal">
         <CheckBox
             android:id="@+id/cb_share_item_rv_match"
@@ -79,8 +79,8 @@
             android:gravity="center"
             android:text="12"
             android:textColor="@drawable/select_member_checkfont"
-            android:textSize="10px"
-            android:paddingLeft="14px"
+            android:textSize="12px"
+            android:paddingLeft="12px"
             android:drawableLeft="@drawable/select_match_checkimg1"
             android:background="@drawable/select_macthbg"/>
         <CheckBox
@@ -92,7 +92,7 @@
             android:text="12"
             android:textColor="@drawable/select_member_checkfont"
             android:textSize="12px"
-            android:paddingLeft="10px"
+            android:paddingLeft="12px"
             android:drawableLeft="@drawable/select_match_checkimg2"
             android:background="@drawable/select_macthbg"/>
     </LinearLayout>

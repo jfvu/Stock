@@ -78,16 +78,35 @@
                 android:background="@drawable/pop_llbg"
                 android:orientation="horizontal"
                 android:gravity="center">
-                <ImageView
-                    android:layout_width="12px"
-                    android:layout_height="12px"
-                    android:src="@drawable/create_1"/>
-                <TextView
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/create_check1"
                     android:text="主图公式"
-                    android:textColor="#40121212"
-                    android:textSize="14px"/>
+                    android:textSize="14px"
+                    android:textColor="@drawable/create_check7"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/pop_llbg"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/create_check2"
+                    android:text="主图公式"
+                    android:textSize="14px"
+                    android:textColor="@drawable/create_check8"
+                    />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -96,34 +115,16 @@
                 android:background="@drawable/pop_llbg"
                 android:orientation="horizontal"
                 android:gravity="center">
-                <ImageView
-                    android:layout_width="12px"
-                    android:layout_height="12px"
-                    android:src="@drawable/create_2"/>
-                <TextView
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="副图公式"
-                    android:textColor="#40121212"
-                    android:textSize="14px"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@drawable/pop_llbg"
-                android:orientation="horizontal"
-                android:gravity="center">
-                <ImageView
-                    android:layout_width="12px"
-                    android:layout_height="12px"
-                    android:src="@drawable/create_3"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="分时公式"
-                    android:textColor="#40121212"
-                    android:textSize="14px"/>
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/create_check3"
+                    android:text="主图公式"
+                    android:textSize="14px"
+                    android:textColor="@drawable/create_check9"
+                    />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -143,16 +144,16 @@
                 android:background="@drawable/pop_llbg"
                 android:orientation="horizontal"
                 android:gravity="center">
-                <ImageView
-                    android:layout_width="12px"
-                    android:layout_height="12px"
-                    android:src="@drawable/create_4"/>
-                <TextView
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="预警公式"
-                    android:textColor="#40121212"
-                    android:textSize="14px"/>
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/create_check4"
+                    android:text="主图公式"
+                    android:textSize="14px"
+                    android:textColor="@drawable/create_check10"
+                    />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -161,16 +162,16 @@
                 android:background="@drawable/pop_llbg"
                 android:orientation="horizontal"
                 android:gravity="center">
-                <ImageView
-                    android:layout_width="12px"
-                    android:layout_height="12px"
-                    android:src="@drawable/create_5"/>
-                <TextView
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="构件公式"
-                    android:textColor="#40121212"
-                    android:textSize="14px"/>
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/create_check5"
+                    android:text="主图公式"
+                    android:textSize="14px"
+                    android:textColor="@drawable/create_check11"
+                    />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -179,16 +180,16 @@
                 android:background="@drawable/pop_llbg"
                 android:orientation="horizontal"
                 android:gravity="center">
-                <ImageView
-                    android:layout_width="12px"
-                    android:layout_height="12px"
-                    android:src="@drawable/create_6"/>
-                <TextView
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="组合公式"
-                    android:textColor="#40121212"
-                    android:textSize="14px"/>
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/create_check6"
+                    android:text="主图公式"
+                    android:textSize="14px"
+                    android:textColor="@drawable/create_check12"
+                    />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

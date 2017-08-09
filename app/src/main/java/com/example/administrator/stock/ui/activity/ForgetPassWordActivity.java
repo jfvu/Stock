@@ -3,8 +3,8 @@ package com.example.administrator.stock.ui.activity;
 import android.graphics.Color;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.administrator.stock.R;
 
@@ -17,7 +17,7 @@ public class ForgetPassWordActivity extends BaseActivity {
     @BindView(R.id.ll_status_activity_forgetpassword)
     LinearLayout mLlStatusActivityForgetpassword;
     @BindView(R.id.img_return_activity_forgetpassword)
-    ImageView mImgReturnActivityForgetpassword;
+    RelativeLayout mImgReturnActivityForgetpassword;
     @BindView(R.id.btn_getcode_activity_forgetpassword)
     Button mBtnGetcodeActivityForgetpassword;
     @BindView(R.id.btn_finish_activity_forgetpassword)

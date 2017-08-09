@@ -65,9 +65,11 @@ public class SingleTestActivity extends BaseActivity {
                 break;
             case R.id.tv_formula:
                 mIntent = new Intent(this,PreviewActivity.class);
+
                 startActivity(mIntent);
                 break;
             case R.id.ll_reversal:
+                finish();
                 break;
             case R.id.ll_choose:
                 break;

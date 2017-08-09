@@ -235,7 +235,7 @@
             android:id="@+id/btn_next_activity_preferences"
             android:layout_width="147px"
             android:layout_height="44px"
-            android:background="@drawable/shape_login"
+            android:background="@drawable/shape_login2"
             android:text="下一步"
             android:textColor="#FFFF0000"
             android:textSize="16px"

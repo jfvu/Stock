@@ -147,6 +147,14 @@
         </activity>
         <activity android:name=".ui.activity.ReportActivity">
         </activity>
+        <activity android:name=".ui.activity.EntrustActivity">
+        </activity>
+        <activity android:name=".ui.activity.DealActivity">
+        </activity>
+        <activity android:name=".ui.activity.HistoryEntrustActivity">
+        </activity>
+        <activity android:name=".ui.activity.HistoryDealActivity">
+        </activity>
     </application>
 
 </manifest>
