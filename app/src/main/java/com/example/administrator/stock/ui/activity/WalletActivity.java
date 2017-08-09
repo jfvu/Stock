@@ -1,9 +1,11 @@
 package com.example.administrator.stock.ui.activity;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,6 +38,7 @@ public class WalletActivity extends BaseActivity {
     private WalletPop mWalletPop;
     private WindowManager.LayoutParams lp;
     private Window window;
+    private MyLayoutManager mMyLayoutManager;
 
     @Override
     protected void initData() {
@@ -44,7 +47,9 @@ public class WalletActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-        mRvActivityWallet.setLayoutManager(new LinearLayoutManager(this));
+        mMyLayoutManager= new MyLayoutManager(this);
+        mMyLayoutManager.setScrollEnabled(false);
+        mRvActivityWallet.setLayoutManager(mMyLayoutManager);
         mRvActivityWallet.setAdapter(new MyAdapter());
     }
 
@@ -152,4 +157,33 @@ public class WalletActivity extends BaseActivity {
             }
         }
     };
+    class MyLayoutManager extends LinearLayoutManager {
+        private boolean isScrollEnabled = true;
+
+        public MyLayoutManager(Context context) {
+            super(context);
+        }
+
+        public MyLayoutManager(Context context, int orientation, boolean reverseLayout) {
+            super(context, orientation, reverseLayout);
+        }
+
+        public MyLayoutManager(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+            super(context, attrs, defStyleAttr, defStyleRes);
+        }
+        /**
+         * 是否支持滑动
+         * @param flag
+         */
+        public void setScrollEnabled(boolean flag) {
+            this.isScrollEnabled = flag;
+        }
+
+        @Override
+        public boolean canScrollVertically() {
+            //isScrollEnabled：recyclerview是否支持滑动
+            //super.canScrollVertically()：是否为竖直方向滚动
+            return isScrollEnabled && super.canScrollVertically();
+        }
+    }
 }
