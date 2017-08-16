@@ -144,12 +144,14 @@
         android:layout_height="36px"
         android:orientation="horizontal">
         <RelativeLayout
+            android:id="@+id/rl_rank"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="12px"
             android:background="@drawable/main_card"
             android:layout_weight="1">
             <TextView
+                android:id="@+id/tv_show"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="MA6上穿MA18"
@@ -185,10 +187,12 @@
         android:textSize="14px"
         android:layout_margin="12px"/>
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="36px"
         android:orientation="horizontal">
         <RelativeLayout
+            android:id="@+id/ll_number"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="12px"
@@ -196,6 +200,7 @@
             android:layout_weight="1"
             android:layout_marginRight="12px">
             <TextView
+                android:id="@+id/tv_show1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2"

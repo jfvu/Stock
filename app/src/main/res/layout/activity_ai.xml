@@ -83,7 +83,7 @@
             android:gravity="center"
             android:textColor="@drawable/select_tabfont"
             android:background="@drawable/select_aitabin"
-            android:text="我购买的"
+            android:text="我的订阅"
             android:textSize="28px"/>
         <RadioButton
             android:id="@+id/rb_creat_activity_ai"
@@ -95,6 +95,17 @@
             android:textColor="@drawable/select_tabfont"
             android:background="@drawable/select_aitabin"
             android:text="我创建的"
+            android:textSize="28px"/>
+        <RadioButton
+            android:id="@+id/rb_collect_activity_ai"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:textColor="@drawable/select_tabfont"
+            android:background="@drawable/select_aitabin"
+            android:text="我的收藏"
             android:textSize="28px"/>
     </RadioGroup>
    <android.support.v7.widget.RecyclerView

@@ -49,15 +49,17 @@
         android:layout_height="36px"
         android:orientation="horizontal">
         <RelativeLayout
+            android:id="@+id/rl_1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="12px"
             android:background="@drawable/main_card"
             android:layout_weight="1">
             <TextView
+                android:id="@+id/tv_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="内容内容内容内容"
+                android:text="股价相对于成本上涨超过n%"
                 android:textColor="#E6121212"
                 android:textSize="14px"
                 android:layout_marginLeft="15px"
@@ -96,15 +98,17 @@
         android:layout_height="36px"
         android:orientation="horizontal">
         <RelativeLayout
+            android:id="@+id/rl_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="12px"
             android:background="@drawable/main_card"
             android:layout_weight="1">
             <TextView
+                android:id="@+id/tv_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="内容内容内容内容"
+                android:text="股价相对于成本下跌超过n%"
                 android:textColor="#E6121212"
                 android:textSize="14px"
                 android:layout_marginLeft="15px"

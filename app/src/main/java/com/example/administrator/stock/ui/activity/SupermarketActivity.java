@@ -1,7 +1,6 @@
 package com.example.administrator.stock.ui.activity;
 
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -13,7 +12,6 @@ import com.example.administrator.stock.R;
 import com.example.administrator.stock.adapter.SupermarketFragmentAdapter;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class SupermarketActivity extends BaseActivity {
@@ -92,13 +90,6 @@ public class SupermarketActivity extends BaseActivity {
     @Override
     protected int color() {
         return Color.parseColor("#ff0000");
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // TODO: add setContentView(...) invocation
-        ButterKnife.bind(this);
     }
 
     @OnClick({R.id.img_return_activity_supermarket, R.id.tv_ranking_activity_supermarket})
