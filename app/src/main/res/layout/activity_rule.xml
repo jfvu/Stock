@@ -53,12 +53,15 @@
             android:textSize="16px"
             android:layout_marginLeft="12px"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="出金叉就可以修改参数"
             android:textColor="#E6121212"
             android:textSize="14px"
-            android:layout_marginLeft="114px"/>
+            android:layout_marginLeft="114px"
+            android:layout_marginRight="80px"
+            />
         <ImageView
             android:layout_width="8px"
             android:layout_height="14px"
@@ -66,6 +69,7 @@
             android:src="@drawable/all_next"
             android:layout_marginRight="12px"/>
         <TextView
+            android:id="@+id/tv_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="多选"
@@ -88,6 +92,16 @@
         android:textColor="#E6121212"
         android:textSize="16px"
         android:layout_marginLeft="12px"/>
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#E6121212"
+            android:textSize="14px"
+            android:layout_marginLeft="114px"
+            android:layout_marginRight="80px"
+            />
     <ImageView
         android:layout_width="8px"
         android:layout_height="14px"

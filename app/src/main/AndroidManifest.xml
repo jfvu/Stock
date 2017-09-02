@@ -155,6 +155,10 @@
         </activity>
         <activity android:name=".ui.activity.HistoryDealActivity">
         </activity>
+        <activity android:name=".ui.activity.IndexActivity">
+        </activity>
+        <activity android:name=".ui.activity.FundamentalsActivity">
+        </activity>
     </application>
 
 </manifest>

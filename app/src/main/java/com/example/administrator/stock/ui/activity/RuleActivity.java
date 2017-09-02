@@ -49,6 +49,12 @@ public class RuleActivity extends BaseActivity {
     RelativeLayout mLlNumber;
     @BindView(R.id.tv_show1)
     TextView mTvShow1;
+    @BindView(R.id.tv_1)
+    TextView mTv1;
+    @BindView(R.id.tv_2)
+    TextView mTv2;
+    @BindView(R.id.tv_3)
+    TextView mTv3;
     private Intent mIntent;
     private SpinerPopWindow<String> mSpinerPopWindow, mSpinerPopWindow1;
 
@@ -111,8 +117,12 @@ public class RuleActivity extends BaseActivity {
                 finish();
                 break;
             case R.id.rl_index_activity_rule:
+                mIntent = new Intent(RuleActivity.this, IndexActivity.class);
+                startActivityForResult(mIntent, 1000);
                 break;
             case R.id.rl_base_activity_rule:
+                mIntent = new Intent(RuleActivity.this, FundamentalsActivity.class);
+                startActivityForResult(mIntent, 1000);
                 break;
             case R.id.rl_bulid_activity_rule:
                 break;
@@ -155,5 +165,17 @@ public class RuleActivity extends BaseActivity {
             //setTextImage(R.drawable.icon_down);
         }
     };
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1000 && resultCode == 1001) {
+            mTv1.setText(data.getStringExtra("result"));
+        } else if (requestCode == 1000 && resultCode == 1002) {
+            mTv3.setText(data.getStringExtra("result"));
+        }
+    }
+
+
 
 }
