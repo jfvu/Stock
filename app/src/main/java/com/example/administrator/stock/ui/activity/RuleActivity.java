@@ -137,6 +137,7 @@ public class RuleActivity extends BaseActivity {
             case R.id.ll_number:
                 mSpinerPopWindow1.setWidth(mLlNumber.getWidth());
                 mSpinerPopWindow1.showAsDropDown(mLlNumber);
+
                 break;
         }
     }

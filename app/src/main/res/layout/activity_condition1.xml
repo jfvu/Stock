@@ -141,7 +141,7 @@
             android:layout_weight="1"
             android:layout_marginLeft="5px"/>
         <com.zcw.togglebutton.ToggleButton
-            android:id="@+id/tb_2_activity_messageset"
+            android:id="@+id/tb_3_activity_messageset"
             android:layout_width="40px"
             android:layout_height="20px"
             app:tbOnColor="#ff0000"

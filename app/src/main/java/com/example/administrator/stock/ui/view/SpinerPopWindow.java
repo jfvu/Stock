@@ -1,7 +1,9 @@
 package com.example.administrator.stock.ui.view;
 
 import android.content.Context;
+import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -94,4 +96,15 @@ public class SpinerPopWindow<T> extends PopupWindow {
         private TextView tvName;
 
     }
+    @Override
+    public void showAsDropDown(View anchor) {
+        if(Build.VERSION.SDK_INT >= 24){
+            Rect visibleFrame = new Rect();
+            anchor.getGlobalVisibleRect(visibleFrame);
+            int height = anchor.getResources().getDisplayMetrics().heightPixels - visibleFrame.bottom;
+            setHeight(height);
+        }
+        super.showAsDropDown(anchor);
+    }
+
 }
